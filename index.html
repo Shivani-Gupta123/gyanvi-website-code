@@ -122,7 +122,15 @@ s0.parentNode.insertBefore(s1,s0);
     .btn-top a {
       margin-right: 10px;
     }
-    @media (min-width: 768px) {
+
+    @media(min-width:1024px) {
+      .menu{
+        display: none;
+      }
+    }
+
+
+    @media (max-width: 768px) {
       .carousel-caption h3 {
         font-size: 2rem; /* Adjust heading size for medium and larger screens */
       }
@@ -130,6 +138,16 @@ s0.parentNode.insertBefore(s1,s0);
         font-size: 1.2rem; /* Adjust paragraph size for medium and larger screens */
       }
     }
+
+    .navbar-nav .list {
+      color: white !important; 
+    }
+
+    .phone{
+      display: flexbox;
+      flex-direction: column;
+    }
+   
 </style>
 </head>
 
@@ -169,19 +187,25 @@ s0.parentNode.insertBefore(s1,s0);
             <div class="col-lg-12 col-md-12 col-sm-12 col-12">
                 <div class="d-flex bd-highlight">
                   <div style="color: white;" class=" me-auto" id="top-contact">
+                    <div class="phone"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="bi bi-telephone-inbound" viewBox="0 0 16 16">
+                      <path d="M15.854.146a.5.5 0 0 1 0 .708L11.707 5H14.5a.5.5 0 0 1 0 1h-4a.5.5 0 0 1-.5-.5v-4a.5.5 0 0 1 1 0v2.793L15.146.146a.5.5 0 0 1 .708 0m-12.2 1.182a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.6 17.6 0 0 0 4.168 6.608 17.6 17.6 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.68.68 0 0 0-.58-.122l-2.19.547a1.75 1.75 0 0 1-1.657-.459L5.482 8.062a1.75 1.75 0 0 1-.46-1.657l.548-2.19a.68.68 0 0 0-.122-.58zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877z"/>
+                    </svg> +91 8010268352
                     <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="bi bi-telephone-inbound" viewBox="0 0 16 16">
                       <path d="M15.854.146a.5.5 0 0 1 0 .708L11.707 5H14.5a.5.5 0 0 1 0 1h-4a.5.5 0 0 1-.5-.5v-4a.5.5 0 0 1 1 0v2.793L15.146.146a.5.5 0 0 1 .708 0m-12.2 1.182a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.6 17.6 0 0 0 4.168 6.608 17.6 17.6 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.68.68 0 0 0-.58-.122l-2.19.547a1.75 1.75 0 0 1-1.657-.459L5.482 8.062a1.75 1.75 0 0 1-.46-1.657l.548-2.19a.68.68 0 0 0-.122-.58zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877z"/>
                     </svg> +91 8010268352
+                  
+                  </div>
+                
 
-
-                    </i>
+          
                     <!-- <a href="blog.html">Our Blog</a> -->
                       
                   </div>
-                    <div class="dropdown top-bar  bd-highlight" id="Company">
+              
+                    <div class="menu dropdown top-bar  bd-highlight" id="Company">
                        
                         <button class="btn  dropdown-toggle" type="button" id="top-bar-menu" style="font-weight: bold;" data-bs-toggle="dropdown" aria-expanded="false">
-                          Company
+                          Menu
                         </button>
                         <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1" style="background: #0c5192;">
                           <li class="p-0"><a class="dropdown-item " href="index-2.html">Home</a></li>
@@ -209,6 +233,34 @@ s0.parentNode.insertBefore(s1,s0);
     </div>
 </section>
 
+<nav class="navbar navbar-expand-lg  bg-light p-0">
+  <!-- <a class="navbar-brand" href="#"></a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button> -->
+  <div style="justify-content: center;" class="collapse navbar-collapse" id="navbarNav">
+    <ul style="background-color: rgb(29, 28, 28);" class="navbar-nav  ">
+      <li  class="nav-item ">
+        <a  class="list nav-link " href="index-2.html">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="list nav-link" href="about-us.html">About Us</a>
+      </li>
+      <li class="nav-item">
+        <a class="list nav-link" href="#">Portfolio</a>
+      </li>
+      <li class="nav-item">
+        <a class="list nav-link" href="#">Testimonials</a>
+      </li>
+      <li class="nav-item">
+        <a class="list nav-link" href="#">Career</a>
+      </li>
+      <li class="nav-item">
+        <a class="list nav-link" href="contact-us.html">Contact Us</a>
+      </li>
+    </ul>
+  </div>
+</nav>
      <!-- end top bar -->
 
      <!-- start header desktop  -->
@@ -220,7 +272,7 @@ s0.parentNode.insertBefore(s1,s0);
               <nav class="navbar navbar-expand-lg navbar-light bg-none ">
                 
                 <div class="container-fluid">
-                  <a class="navbar-brand" href="index-2.html"> <img src="gyanvi-img/logo.png" alt=""> </a>
+                  <a class="navbar-brand" href="index-2.html"> <img style="height: 60px;width: 120px;" src="gyanvi-img/logo.png" alt=""> </a>
                   <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-content">
                     <div class="hamburger-toggle">
                       <div class="hamburger">
@@ -983,7 +1035,7 @@ s0.parentNode.insertBefore(s1,s0);
  <header class="float-panel" data-top="0" data-scroll="200" id="block-header">
   <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <div class="container-fluid">
-      <a class="navbar-brand" href="#"> <img src="gyanvi-img/logo.png" alt=""></a>
+      <a class="navbar-brand" href="#"> <img style="width: 80px; height: 70px;" src="gyanvi-img/logo.png" alt=""></a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -1863,29 +1915,28 @@ s0.parentNode.insertBefore(s1,s0);
           <div class="col-xs-12 col-sm-12 col-md-6 col-lg-4 mt-4 filter css">
             <div class="single-gallery mb-20 ">
               <div class="gallery-img"> 
-                  <img src="img/portfolio/aa.jpg" alt=""  style=" width: 100%;"/> </div>
+                  <img style="height:200px;" src="https://img.freepik.com/premium-photo/give-portfolio-software-developer-website_710103-591.jpg" alt=""  style=" width: 100%;"/> </div>
               <div class="gallery-details"> <a href="#" rel="prettyPhoto[gallery2]" class="gallery-btn"> </a> </div>
             </div>
           </div>
             <div class="col-xs-12 col-sm-12 col-md-6 col-lg-4 mt-4 filter css">
             <div class="single-gallery mb-20 ">
               <div class="gallery-img"> 
-                  <img src="img/portfolio/bb.jpg" alt=""  style=" width: 100%;"/> </div>
+                  <img src="https://w3layouts.com/wp-content/uploads/2019/06/intence-website-template-1.jpg" alt=""  style=" width: 100%;"/> </div>
               <div class="gallery-details"> <a href="#" rel="prettyPhoto[gallery2]" class="gallery-btn"> </a> </div>
             </div>
           </div>
           <div class="col-xs-12 col-sm-12 col-md-6 col-lg-4 mt-4 filter html">
             <div class="single-gallery mb-20">
               <div class="gallery-img"> 
-                  <img src="img/portfolio/goyal.jpg" alt=""  style=" width: 100%;"/> </div>
+                  <img src="https://img.freepik.com/premium-psd/personal-portfolio-template-landing-page_203613-20.jpg" alt=""  style=" width: 100%;"/> </div>
               <div class="gallery-details"> <a href="img/portfolio/a.jpg" rel="prettyPhoto[gallery2]" class="gallery-btn"> </a> </div>
             </div>
           </div>
           <div class="col-xs-12 col-sm-12 col-md-6 col-lg-4 mt-4 filter css">
             <div class="single-gallery mb-20 ">
               <div class="gallery-img"> 
-                  <img src="img/portfolio/cc.jpg" alt=""  style=" width: 100%;"/> </div>
-              <div class="gallery-details"> <a href="#" rel="prettyPhoto[gallery2]" class="gallery-btn"> </a> </div>
+                  <img src="https://www.wdsoft.in/wp-content/uploads/2021/06/Ved-plus-impex-website-design-by-wdsoft.jpg" class="gallery-btn"> </a> </div>
             </div>
           </div>
           <div class="col-xs-12 col-sm-12 col-md-6 col-lg-4 mt-4 filter html">
