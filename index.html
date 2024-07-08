@@ -74,6 +74,14 @@ s0.parentNode.insertBefore(s1,s0);
 <!--End of Tawk.to Script-->
 <style>
 
+  #preloader{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background-size: 15%;
+    background: #fff url(img/icegif-1259.gif) no-repeat center ;
+    z-index: 99999;
+  }
 
   .tagline-container {
       text-align: center;
@@ -333,7 +341,7 @@ s0.parentNode.insertBefore(s1,s0);
 </head>
 
 <body>
-   
+   <div id="preloader"></div>
 
   <div class="container-fluid tagline-container">
     <div class="tagline" id="tagline"></div>
@@ -2203,13 +2211,13 @@ s0.parentNode.insertBefore(s1,s0);
   <section class="bg-talk" style="margin-top:0px !important;">
     <div class="container">
       <div class="row">
-        <div class="col-lg-8 col-md-6 ">
+        <div class="col-lg-8  ">
           <div class="lets-talk">
            
               <p> Ready To Get Started ? Get Beautiful Websites For Your Business With Gyanvi Digital !!</p>
           </div>
         </div>
-        <div class="col-lg-4 col-md-6 ">
+        <div class="col-lg-4 ">
           <div class="lets-talk">
             <a href="contact-us.html">Contact Us</a>
           </div>
@@ -2309,7 +2317,7 @@ s0.parentNode.insertBefore(s1,s0);
     <section class="bg-talk" style="margin-top:0px !important;">
       <div class="container">
         <div class="row">
-          <div class="col-lg-8 col-md-4 ">
+          <div class="col-lg-8  ">
             <div class="lets-talk">
               <!-- <p>
                 Want To Know How You Can Grow Your <br> Business,
@@ -2320,7 +2328,7 @@ s0.parentNode.insertBefore(s1,s0);
                   Speak To Our Expert Strategists Now.</p>
             </div>
           </div>
-          <div class="col-lg-4 col-md-4">
+          <div class="col-lg-4 ">
             <div class="lets-talk-1">
               <a href="contact-us.html">Contact Us</a>
             </div>
@@ -2924,6 +2932,14 @@ s0.parentNode.insertBefore(s1,s0);
 <!-- <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.js"></script> -->
 <script type="text/javascript" src="../code.jquery.com/jquery-1.12.0.min.js"></script>
 <script type="text/javascript" src="../cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.js"></script>
+
+<script>
+  var loader = document.getElementById('preloader');
+  window.addEventListener('load', function(){
+    loader.style.display='none';
+  })
+</script>
+
  <script>
 $(document).ready(function(){
     $("#testimonial-slider").owlCarousel({
