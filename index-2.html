@@ -38,6 +38,8 @@
 <link rel="stylesheet" href="../cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.css">
 <link rel="stylesheet" href="../cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.theme.min.css">
 <link href="gyanvi-img/logo.png" rel="shortcut icon" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.css" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.theme.min.css" />
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -273,16 +275,61 @@ s0.parentNode.insertBefore(s1,s0);
       }
      
     }
-      .zigzag-section{
+
+    .zigzag-section h1{
+      font-weight: bold;
+      font-size: 40px;
+      padding-bottom: 20px;
+    }
+
+    .zigzag-section{
         padding-left:50px ;
       }
-
-   
 
     .navbar-nav .list {
       color: white !important; 
     }
-  
+
+    .testimonials {
+      background-color:transparent;
+      padding: 50px 0;
+    }
+    .testimonials .heading {
+      text-align: center;
+      margin-bottom: 30px;
+      color: white;
+    }
+    .testimonials .heading h1 {
+      font-size: 36px;
+      margin: 0;
+    }
+    .testimonials .testimonial {
+      text-align: center;
+      padding: 20px;
+      background:transparent;
+      border-radius: 10px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+      margin: 15px;
+    }
+    .testimonials .testimonial .pic img {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      margin-bottom: 15px;
+    }
+    .testimonials .testimonial .description {
+      font-size: 16px;
+      margin-bottom: 15px;
+    }
+    .testimonials .testimonial .title {
+      font-size: 18px;
+      font-weight: bold;
+      margin: 0;
+    }
+    .testimonials .testimonial .post {
+      font-size: 14px;
+      color: #888;
+    }
 
 </style>
 </head>
@@ -1440,7 +1487,7 @@ s0.parentNode.insertBefore(s1,s0);
                
                 <div class="carousel-caption  d-md-block" id="caption-mobile">
                     <h2 style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">Get World-Class, Multi <br> Channel E-Commerce <br> Solutions For Your Online Business </h2>
-                   <p>With the latest technologies, we offer you custom-based solutions that help to establish your obline business</p>
+                   <p>With the latest technologies, we offer you custom-based solutions that help to establish your obline business have higher ROI and improve business processes</p>
                    <div class="btn-top">
                     <a href="about-us.html" class="">Read More</a>
                     <a href="contact-us.html" class="btn-a">Contact Us</a>
@@ -1740,7 +1787,9 @@ s0.parentNode.insertBefore(s1,s0);
     </div>
   </section>
 
+
   <section class="zigzag-section">
+    <h1 style="justify-content: center; align-items: center;">Our Services</h1>
     <div class="container">
         <div class="row zigzag-item">
             <div class="col-md-4 zigzag-left">
@@ -2530,100 +2579,63 @@ s0.parentNode.insertBefore(s1,s0);
 
 <!-- start Testimonials -->
 
-<section class="testimonils-img">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-12 col-md-12 col-sm-12 col-12">
-          <div class="heading">
-            <h1 class="">Testimonials</h1>
-          </div>
+<section style="background-image: url(img/testi.jpg);" class="testimonials">
+  <div class="container">
+    <div class="heading">
+      <h1 style="color: white;">Testimonials</h1>
+    </div>
+    <div id="testimonial-slider" class="owl-carousel">
+      <div class="testimonial">
+        <div class="pic">
+          <img src="img/p1.png" alt="Testimonial 1">
         </div>
+        <p class="description">“Gyanvi Digital is one of the best digital-marketing companies in UP (East) and I really appreciate their work commitment and dedicated employees who are regularly working hard to make our companies grow in the e-world. I have been attached to many other e-companies but this company is true to its word, always delivering results within the given time limits.”</p>
+        <h3 class="title">Mr. Rohan Maheshwari</h3>
+        <span class="post">Kesharwani Travels</span>
+      </div>
+      <div class="testimonial">
+        <div class="pic">
+          <img src="img/p1.png" alt="Testimonial 2">
+        </div>
+        <p class="description">“Very nice promotion at satisfactory rates given by Gyanvi Digital. Keep it up! We are getting a very good number of genuine business inquiries and we have converted too.”</p>
+        <h3 class="title">Mr. Vivek Raghuvanshi</h3>
+        <span class="post">Goyal Equipments</span>
+      </div>
+      <div class="testimonial">
+        <div class="pic">
+          <img src="img/p1.png" alt="Testimonial 3">
+        </div>
+        <p class="description">“We are very glad to inform you that we are very satisfied with our website & we are getting business from different parts of India & abroad.”</p>
+        <h3 class="title">Mr. Sanjay Goel</h3>
+        <span class="post">Nepal Travel Information Centre</span>
+      </div>
+      <div class="testimonial">
+        <div class="pic">
+          <img src="img/p1.png" alt="Testimonial 4">
+        </div>
+        <p class="description">“Many thanks once again for the timely update. I am really happy that you deliver what you promise at the time of agreement, and especially the after-sales service is very good. You update the site very fast on every request.” Great Team.... Keep it up! Thanks.</p>
+        <h3 class="title">Mr. Abhishek Singh</h3>
+        <span class="post">Habibullah & Co.</span>
+      </div>
+      <div class="testimonial">
+        <div class="pic">
+          <img src="img/p1.png" alt="Testimonial 5">
+        </div>
+        <p class="description">“Service is good. My all products are listed on Google 1st Page. I am satisfied with Gyanvi Digital's work. Keep it up & all the best!”</p>
+        <h3 class="title">Mr. Mukul Srivastava</h3>
+        <span class="post">Singh Electricals</span>
+      </div>
+      <div class="testimonial">
+        <div class="pic">
+          <img src="img/p1.png" alt="Testimonial 6">
+        </div>
+        <p class="description">“With Gyanvi Digital we are fully satisfied with your work and we appreciate your work & wordings.”</p>
+        <h3 class="title">Mr. Sumit Gaur</h3>
+        <span class="post">Sun Solar Enterprises</span>
       </div>
     </div>
-    <div class="container">
-      <div class="row">
-          <div class="col-md-12">
-              <div id="testimonial-slider" class="owl-carousel">
-                  <div class="testimonial">
-                  
-                      <p class="description">
-                        “ Gyanvi Digital is one of the best digital-marketing company in UP (East) and I really appreciate their work commitment and dedicated employees who are regularly working hard to make our companies grow in e-world. I have been attached to many other e-companies but Company is man of words, who has always shown the results within given time limits”..                    </p>
-                        <div class="pic">
-                          <img src="img/p1.png">
-                      </div>
-                      <div class="testimonial-profile">
-                          <h3 class="title">Mr.Rohan Maheshwari</h3>
-                          <span class="post">Kesharwani Travels</span>
-                      </div>
-                      </div>
-                  <div class="testimonial">
-                    
-                      <p class="description">
-                        Very Nice Promotion on Satisfactory Rates Given by Gyanvi Digital.. Keep It Up...We are getting very good number of Genuine Business Inquiry and we have covert too.
-                      </p>
-                      <div class="pic">
-                        <img src="img/p1.png">
-                    </div>
-                    <div class="testimonial-profile">
-                        <h3 class="title"> Mr. Vivek Raghuvanshi </h3>
-                        <span class="post">Goyal Equipments</span>
-                    </div>
-                  </div>
-                  <div class="testimonial">
-                    
-                      <p class="description">
-                        D/Sir, We are very glad to know you that, we are very much satisfied with our website & we are getting business from different part of India & abroad.                     </p>
-                        <div class="pic">
-                          <img src="img/p1.png">
-                      </div>
-                      <div class="testimonial-profile">
-                          <h3 class="title"> Mr. Sanjay Goel</h3>
-                          <span class="post">Nepal Travel Information Centre</span>
-                      </div>
-                      </div>
-                      <div class="testimonial">
-                    
-                        <p class="description">
-                          “Many thanks once again for timely update. I m really happy that you are delivering what your promise at time of agreement and as specially after sales service is very good. You update the site very fast on every request.” Great Team ....Keep It Up!!!! Thanks </p>                       
-                           <div class="pic">
-                            <img src="img/p1.png">
-                        </div>
-                        <div class="testimonial-profile">
-                            <h3 class="title">Mr. Abhishek Singh</h3>
-                            <span class="post">Habibullah & Co.</span>
-                        </div>
-                        </div>
-                        <div class="testimonial">
-                    
-                          <p class="description">
-                            “Service is Good, my all products are listed in Google 1st Page. I am satisfied with Gyanvi Digital work.Keep it up & All The Best”.. </p>                        
-                             <div class="pic">
-                              <img src="img/p1.png">
-                          </div>
-                          <div class="testimonial-profile">
-                              <h3 class="title"> Mr.Mukul Srivastava </h3>
-                              <span class="post"> Singh Electricals </span>
-                          </div>
-                          </div>
-                          <div class="testimonial">
-                    
-                            <p class="description">
-                              “ With Gyanvi Digital we are fully satisfied with your work and we appreciate your work & wordings”....  </p>
-  
-                               <div class="pic">
-                                <img src="img/p1.png">
-                            </div>
-                            <div class="testimonial-profile">
-                                <h3 class="title"> Mr. Sumit Gaur </h3>
-                                <span class="post"> Sun Solar Enterprises  </span>
-                            </div>
-                            </div>
-                      
-              </div>
-          </div>
-      </div>
   </div>
-  </section>
+</section>
       <!-- start footer -->
        
       <footer>
@@ -2984,8 +2996,33 @@ function topFunction() {
   document.body.scrollTop = 0;
   document.documentElement.scrollTop = 0;
 }
+</script>
 
-
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.js"></script>
+<script>
+  $(document).ready(function(){
+    $("#testimonial-slider").owlCarousel({
+      items: 1,
+      loop: true,
+      nav: true,
+      dots: true,
+      autoplay: true,
+      autoplayTimeout: 5000,
+      autoplayHoverPause: true,
+      responsive: {
+        0: {
+          items: 1
+        },
+        600: {
+          items: 1
+        },
+        1000: {
+          items: 1
+        }
+      }
+    });
+  });
 </script>
 
 </body>
