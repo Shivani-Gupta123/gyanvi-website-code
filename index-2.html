@@ -122,6 +122,37 @@ s0.parentNode.insertBefore(s1,s0);
       }
     }
 
+    .dropdown-menu {
+      display: none;
+    }
+    .nav-item:hover .dropdown-menu {
+      display: block;
+    }
+    .dropdown-menu {
+      position: absolute;
+      top: 100%;
+      left: 0;
+      z-index: 1000;
+      box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+    }
+    .mega-content {
+      display: flex;
+      flex-wrap: wrap;
+    }
+    .list-group-item {
+      text-align: center;
+      padding: 1rem;
+      border: 1px solid #ddd;
+      margin-bottom: 0.5rem;
+    }
+    .list-group-item img {
+      max-width: 100%;
+      height: auto;
+    }
+    .list-group-item p {
+      margin: 0.5rem 0 0;
+    }
+
     .me-auto{
       color: white;
     }
@@ -374,52 +405,52 @@ s0.parentNode.insertBefore(s1,s0);
     updateTagline();
   </script>
     <!-- start top bar -->
-    <section class="top-bar">
-      <div class="container">
-          <div class="row" >
-              <div class="info col-lg-12 col-md-12 col-sm-12">
-                  <div class="d-flex bd-highlight">
-                    <div class="me-auto" id="top-contact">
-                      <div ><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="bi bi-telephone-inbound" viewBox="0 0 16 16">
-                        <path d="M15.854.146a.5.5 0 0 1 0 .708L11.707 5H14.5a.5.5 0 0 1 0 1h-4a.5.5 0 0 1-.5-.5v-4a.5.5 0 0 1 1 0v2.793L15.146.146a.5.5 0 0 1 .708 0m-12.2 1.182a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.6 17.6 0 0 0 4.168 6.608 17.6 17.6 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.68.68 0 0 0-.58-.122l-2.19.547a1.75 1.75 0 0 1-1.657-.459L5.482 8.062a1.75 1.75 0 0 1-.46-1.657l.548-2.19a.68.68 0 0 0-.122-.58zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877z"/>
-                      </svg><span class="phone">+91 8010268352</span>
-                    
-                    </div>
-  
-            
-                      <!-- <a href="blog.html">Our Blog</a> -->
-                        
-                    </div>
-                
-                      <div class="menu dropdown top-bar  bd-highlight" id="Company">
-                         
-                          <button class="btn  dropdown-toggle" type="button" id="top-bar-menu" style="font-weight: bold;" data-bs-toggle="dropdown" aria-expanded="false">
-                            Menu
-                          </button>
-                          <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1" style="background: #0c5192;">
-                            <li class="p-0"><a class="dropdown-item " href="index-2.html">Home</a></li>
-                            <li class="p-0"><a class="dropdown-item " href="about-us.html">About us</a></li>
-                            <li class="p-0"><a class="dropdown-item " href="#">Career</a></li>
-                            <li class="p-0"><a class="dropdown-item " href="portfolio.html">Portfolio</a></li>
-                            <li class="p-0"><a class="dropdown-item " href="testimonial.html">Testimonials</a></li>
-                            <li class="p-0"><a class="dropdown-item " href="contact-us.html">Contact Us</a></li>
-                          </ul>
-                        </div>
-                        <div class=" bd-highlight company">
-                          <svg style="color: white;" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope-at" viewBox="0 0 16 16">
-                            <path d="M2 2a2 2 0 0 0-2 2v8.01A2 2 0 0 0 2 14h5.5a.5.5 0 0 0 0-1H2a1 1 0 0 1-.966-.741l5.64-3.471L8 9.583l7-4.2V8.5a.5.5 0 0 0 1 0V4a2 2 0 0 0-2-2zm3.708 6.208L1 11.105V5.383zM1 4.217V4a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v.217l-7 4.2z"/>
-                            <path d="M14.247 14.269c1.01 0 1.587-.857 1.587-2.025v-.21C15.834 10.43 14.64 9 12.52 9h-.035C10.42 9 9 10.36 9 12.432v.214C9 14.82 10.438 16 12.358 16h.044c.594 0 1.018-.074 1.237-.175v-.73c-.245.11-.673.18-1.18.18h-.044c-1.334 0-2.571-.788-2.571-2.655v-.157c0-1.657 1.058-2.724 2.64-2.724h.04c1.535 0 2.484 1.05 2.484 2.326v.118c0 .975-.324 1.39-.639 1.39-.232 0-.41-.148-.41-.42v-2.19h-.906v.569h-.03c-.084-.298-.368-.63-.954-.63-.778 0-1.259.555-1.259 1.4v.528c0 .892.49 1.434 1.26 1.434.471 0 .896-.227 1.014-.643h.043c.118.42.617.648 1.12.648m-2.453-1.588v-.227c0-.546.227-.791.573-.791.297 0 .572.192.572.708v.367c0 .573-.253.744-.564.744-.354 0-.581-.215-.581-.8Z"/>
-                          </svg> <span style=" color: white;"> info@gyanvidigital.com</span> </i>
-                        </div>
-                       
-                        
-                
+<section class="top-bar">
+    <div class="container">
+        <div class="row" >
+            <div class="info col-lg-12 col-md-12 col-sm-12">
+                <div class="d-flex bd-highlight">
+                  <div class="me-auto" id="top-contact">
+                    <div ><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="bi bi-telephone-inbound" viewBox="0 0 16 16">
+                      <path d="M15.854.146a.5.5 0 0 1 0 .708L11.707 5H14.5a.5.5 0 0 1 0 1h-4a.5.5 0 0 1-.5-.5v-4a.5.5 0 0 1 1 0v2.793L15.146.146a.5.5 0 0 1 .708 0m-12.2 1.182a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.6 17.6 0 0 0 4.168 6.608 17.6 17.6 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.68.68 0 0 0-.58-.122l-2.19.547a1.75 1.75 0 0 1-1.657-.459L5.482 8.062a1.75 1.75 0 0 1-.46-1.657l.548-2.19a.68.68 0 0 0-.122-.58zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877z"/>
+                    </svg><span class="phone">+91 8010268352</span>
+                  
                   </div>
-  
-              </div>     
-          </div>
-      </div>
-  </section>
+
+          
+                    <!-- <a href="blog.html">Our Blog</a> -->
+                      
+                  </div>
+              
+                    <div class="menu dropdown top-bar  bd-highlight" id="Company">
+                       
+                        <button class="btn  dropdown-toggle" type="button" id="top-bar-menu" style="font-weight: bold;" data-bs-toggle="dropdown" aria-expanded="false">
+                          Menu
+                        </button>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1" style="background: #0c5192;">
+                          <li class="p-0"><a class="dropdown-item " href="index-2.html">Home</a></li>
+                          <li class="p-0"><a class="dropdown-item " href="about-us.html">About us</a></li>
+                          <li class="p-0"><a class="dropdown-item " href="#">Career</a></li>
+                          <li class="p-0"><a class="dropdown-item " href="portfolio.html">Portfolio</a></li>
+                          <li class="p-0"><a class="dropdown-item " href="testimonial.html">Testimonials</a></li>
+                          <li class="p-0"><a class="dropdown-item " href="contact-us.html">Contact Us</a></li>
+                        </ul>
+                      </div>
+                      <div class=" bd-highlight company">
+                        <svg style="color: white;" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope-at" viewBox="0 0 16 16">
+                          <path d="M2 2a2 2 0 0 0-2 2v8.01A2 2 0 0 0 2 14h5.5a.5.5 0 0 0 0-1H2a1 1 0 0 1-.966-.741l5.64-3.471L8 9.583l7-4.2V8.5a.5.5 0 0 0 1 0V4a2 2 0 0 0-2-2zm3.708 6.208L1 11.105V5.383zM1 4.217V4a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v.217l-7 4.2z"/>
+                          <path d="M14.247 14.269c1.01 0 1.587-.857 1.587-2.025v-.21C15.834 10.43 14.64 9 12.52 9h-.035C10.42 9 9 10.36 9 12.432v.214C9 14.82 10.438 16 12.358 16h.044c.594 0 1.018-.074 1.237-.175v-.73c-.245.11-.673.18-1.18.18h-.044c-1.334 0-2.571-.788-2.571-2.655v-.157c0-1.657 1.058-2.724 2.64-2.724h.04c1.535 0 2.484 1.05 2.484 2.326v.118c0 .975-.324 1.39-.639 1.39-.232 0-.41-.148-.41-.42v-2.19h-.906v.569h-.03c-.084-.298-.368-.63-.954-.63-.778 0-1.259.555-1.259 1.4v.528c0 .892.49 1.434 1.26 1.434.471 0 .896-.227 1.014-.643h.043c.118.42.617.648 1.12.648m-2.453-1.588v-.227c0-.546.227-.791.573-.791.297 0 .572.192.572.708v.367c0 .573-.253.744-.564.744-.354 0-.581-.215-.581-.8Z"/>
+                        </svg> <span style=" color: white;"> info@gyanvidigital.com</span> </i>
+                      </div>
+                     
+                      
+              
+                </div>
+
+            </div>     
+        </div>
+    </div>
+</section>
 
 <nav class="navbar navbar-expand-lg  bg-light p-0">
   <!-- <a class="navbar-brand" href="#"></a>
@@ -475,7 +506,8 @@ s0.parentNode.insertBefore(s1,s0);
                         <a class="nav-link active" aria-current="page" href="#">Home</a>
                       </li> -->
                       <li class="nav-item dropdown dropdown-mega position-static">
-                        <a class="nav-link dropdown-toggle" href="#bg-drop-down" data-bs-toggle="dropdown" data-bs-auto-close="outside"><img src="img/website/web-designing.png" alt=""> Web Design</a>
+                        <a class="nav-link dropdown-toggle" href="design.html"  id="webDesignDropdown" role="button" aria-expanded="false">
+                          <img src="img/website/web-designing.png" alt=""> Web Design</a>
                         <div class="dropdown-menu shadow bg-secondary" id="bg-drop-down">
                           <div class="mega-content px-4">
                             <div class="container-fluid">
@@ -606,7 +638,8 @@ s0.parentNode.insertBefore(s1,s0);
                         </div>
                       </li>
                       <li class="nav-item dropdown dropdown-mega position-static">
-                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" data-bs-auto-close="outside"> <img src="img/digital/digital-marketing.png" alt=""> Web Devp</a>
+                        <a class="nav-link dropdown-toggle" href="development.html">
+                           <img src="img/digital/digital-marketing.png" alt=""> Web Devp</a>
                         <div class="dropdown-menu shadow bg-secondary" id="bg-drop-down">
                           <div class="mega-content px-4">
                             <div class="container-fluid">
@@ -758,7 +791,8 @@ s0.parentNode.insertBefore(s1,s0);
                       </li>
                   
                       <li class="nav-item dropdown dropdown-mega position-static">
-                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" data-bs-auto-close="outside"> <img src="img/digital/digital-marketing.png" alt=""> Digital Marketing</a>
+                        <a class="nav-link dropdown-toggle" href="digital.html">
+                           <img src="img/digital/digital-marketing.png" alt=""> Digital Marketing</a>
                         <div class="dropdown-menu shadow bg-secondary" id="bg-drop-down">
                           <div class="mega-content px-4">
                             <div class="container-fluid">
@@ -894,7 +928,8 @@ s0.parentNode.insertBefore(s1,s0);
                         </div>
                       </li>
                       <li class="nav-item dropdown dropdown-mega position-static">
-                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" data-bs-auto-close="outside"> <img src="img/graphics/graphic-designing.png" alt="">   Graphics </a>
+                        <a class="nav-link dropdown-toggle" href="graphics.html">
+                           <img src="img/graphics/graphic-designing.png" alt="">   Graphics </a>
                         <div class="dropdown-menu shadow bg-secondary" id="bg-drop-down">
                           <div class="mega-content px-4">
                             <div class="container-fluid">
@@ -1003,7 +1038,8 @@ s0.parentNode.insertBefore(s1,s0);
                         </div>
                       </li>
                       <li class="nav-item dropdown dropdown-mega position-static">
-                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" data-bs-auto-close="outside"><img src="img/App/mobile-apps.png" alt=""> App</a>
+                        <a class="nav-link dropdown-toggle" href="app.html">
+                          <img src="img/App/mobile-apps.png" alt=""> App</a>
                         <div class="dropdown-menu shadow bg-secondary" id="bg-drop-down">
                           <div class="mega-content px-4">
                             <div class="container-fluid">
@@ -1100,7 +1136,8 @@ s0.parentNode.insertBefore(s1,s0);
                         </div>
                       </li>
                       <li class="nav-item dropdown dropdown-mega position-static">
-                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" data-bs-auto-close="outside"><img src="img/software/software.png" alt=""> Software</a>
+                        <a class="nav-link dropdown-toggle" href="software.html">
+                          <img src="img/software/software.png" alt=""> Software</a>
                         <div class="dropdown-menu shadow bg-secondary" id="bg-drop-down">
                           <div class="mega-content px-4">
                             <div class="container-fluid">
@@ -1231,7 +1268,7 @@ s0.parentNode.insertBefore(s1,s0);
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
         
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <a class="nav-link dropdown-toggle" href="design.html" id="navbarDropdown" role="button">
               Web design
             </a>
             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -1264,7 +1301,7 @@ s0.parentNode.insertBefore(s1,s0);
             </ul>
           </li>
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <a class="nav-link dropdown-toggle" href="digital.html" id="navbarDropdown" role="button">
               Digital Marketing
             </a>
             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -1282,7 +1319,7 @@ s0.parentNode.insertBefore(s1,s0);
             </ul>
           </li>
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <a class="nav-link dropdown-toggle" href="graphics.html" id="navbarDropdown" role="button">
               Graphics 
             </a>
             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -1296,7 +1333,7 @@ s0.parentNode.insertBefore(s1,s0);
                           </ul>
           </li>
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <a class="nav-link dropdown-toggle" href="app.html" id="navbarDropdown" role="button" >
               App 
             </a>
             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -1310,7 +1347,7 @@ s0.parentNode.insertBefore(s1,s0);
                           </ul>
           </li>
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <a class="nav-link dropdown-toggle" href="software.html" id="navbarDropdown" role="button" >
               Software
             </a>
             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -1358,7 +1395,7 @@ s0.parentNode.insertBefore(s1,s0);
             </div>
             </div>
             <div class="col-lg-6 col-md-6 col-12 col-sm-12">
-              <img style="height: 400px;" src="img/slider/s5.png" class="d-block w-100" alt="...">
+              <img style="height: 400px;" src="img/sales-growth-og-image-removebg-preview.png" class="d-block w-100" alt="...">
            
             </div>
           </div>
@@ -1398,7 +1435,7 @@ s0.parentNode.insertBefore(s1,s0);
                 </div>
               </div>
               <div class="col-lg-6 col-md-6 col-12 col-sm-12">
-                <img style="height: 400px;" style="height: 400px;" src="img/slider/s2.png" class="d-block w-100" alt="...">
+                <img style="height: 400px;" style="height: 400px;" src="img/ecommerce-fraud-prevention-1024x512-removebg-preview.png" class="d-block w-100" alt="...">
              
               </div>
             </div>
@@ -1417,7 +1454,7 @@ s0.parentNode.insertBefore(s1,s0);
                 </div>
               </div>
               <div class="col-lg-6 col-md-6 col-12 col-sm-12">
-                <img style="height: 300px;" style="height: 400px;" src="img/slider/s3.png" class="d-block w-100" alt="...">
+                <img style="height: 300px;" src="img/mobiled.png" class="d-block w-100" alt="...">
              
               </div>
             </div>

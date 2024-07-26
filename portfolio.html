@@ -67,6 +67,44 @@
       }
     }
 
+    .dropdown-menu {
+      display: none;
+    }
+    .nav-item:hover .dropdown-menu {
+      display: block;
+    }
+    .dropdown-menu {
+      position: absolute;
+      top: 100%;
+      left: 0;
+      z-index: 1000;
+      box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+    }
+    .mega-content {
+      display: flex;
+      flex-wrap: wrap;
+    }
+    .list-group-item {
+      text-align: center;
+      padding: 1rem;
+      border: 1px solid #ddd;
+      margin-bottom: 0.5rem;
+    }
+    .list-group-item img {
+      max-width: 100%;
+      height: auto;
+    }
+    .list-group-item p {
+      margin: 0.5rem 0 0;
+    }
+
+
+    .whatsapp{
+      top: 87%;
+      left: 10px;
+      position: fixed ;
+    }
+
     .navbar-nav .list {
       color: white !important; 
     }
@@ -212,887 +250,886 @@
   </nav>
        <!-- end top bar -->
   
-       <!-- start header desktop  -->
+             <!-- start header desktop  -->
        
-      <header class="float-panel" data-top="0" data-scroll="200" id="hide-header">
-          <div class="container">
-            <div class="row">
-              <div class="col-lg-12 col-md-12 col-12 col-sm-12">
-                <nav class="navbar navbar-expand-lg navbar-light bg-none ">
-                  
-                  <div class="container-fluid">
-                    <a class="navbar-brand" href="index-2.html"> <img style="height: 60px;width: 120px;" src="gyanvi-img/logo.png" alt=""> </a>
-                    <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-content">
-                      <div class="hamburger-toggle">
-                        <div class="hamburger">
-                          <span class="navbar-toggler-icon"></span>
+             <header class="float-panel" data-top="0" data-scroll="200" id="hide-header">
+              <div class="container">
+                <div class="row">
+                  <div class="col-lg-12 col-md-12 col-12 col-sm-12">
+                    <nav class="navbar navbar-expand-lg navbar-light bg-none ">
+                      
+                      <div class="container-fluid">
+                        <a class="navbar-brand" href="index-2.html"> <img style="height: 60px;width: 120px;" src="gyanvi-img/logo.png" alt=""> </a>
+                        <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-content">
+                          <div class="hamburger-toggle">
+                            <div class="hamburger">
+                              <span class="navbar-toggler-icon"></span>
+                             
+                            </div>
+                          </div>
+                        </button>
+                        <div class="collapse navbar-collapse">
+                          <ul class="navbar-nav mx-auto">
+                            <!-- <li class="nav-item">
+                              <a class="nav-link active" aria-current="page" href="#">Home</a>
+                            </li> -->
+                            <li class="nav-item dropdown dropdown-mega position-static">
+                              <a class="nav-link dropdown-toggle" href="design.html"><img src="img/website/web-designing.png" alt=""> Web Design</a>
+                              <div class="dropdown-menu shadow bg-secondary" id="bg-drop-down">
+                                <div class="mega-content px-4">
+                                  <div class="container-fluid">
+                                    <div class="row">
+                                      <div class="col-12 col-lg-2 col-sm-12 col-md-6 mb-3">
+                                       
+                                        <div class="list-group text-center" id="img-home">
+                                      
+                                          <a class="list-group-item" href="#">
+                                            <img src="img/website/corporate-website.png">
+                                            <p>
+                                       Corporate Website
+                                              </p>
+                                          </a>
+                                          
+                                        </div>
+                                      </div>
+                                      <div class="col-12 col-lg-2 col-sm-12 col-md-6  mb-3">
+                                      
+                                        <div class="list-group text-center" id="img-home">
+                                      
+                                      
+                                          <a class="list-group-item" href="#">
+                                            <img src="img/website/ecommerce-website.png">
+                                            <p>
+                                       
+                                              Ecommerce Website
+                                              </p>
+                                          </a>
+                                          
+                                        </div>
+                                      </div>
+                                      <div class="col-12 col-lg-2 col-sm-12 col-md-6">
+          
+                                        <div class="list-group text-center" id="img-home">
+                                      
+                                      
+                                          <a class="list-group-item" href="#">
+                                            <img src="img/website/landing-page.png">
+                                            <p>
+                                       
+                                              Mobile Web Design
+                                              </p>
+                                          </a>
+                                        </div>
+                                      </div>
+                                      <div class="col-12 col-lg-2 col-sm-12 col-md-6  mb-3">
+                                        
+                                        <div class="list-group text-center" id="img-home">
+                                      
+                                          <a class="list-group-item" href="#">
+                                            <img src="img/website/psd-to-html-designing.png">
+                                            <p>
+                                       
+                                            PSD To Html Designing
+                                              </p>
+                                          </a>
+                                          <!-- <a class="list-group-item" href="#">Drupal Web Development</a>
+                                          <a class="list-group-item" href="#">3rd Party API Integration</a> -->
+                                        </div>
+                                      </div>
+                                  
+                                      <div class="col-12 col-lg-2 col-sm-12 col-md-6">
+                                      
+                                        <div class="list-group text-center" id="img-home">
+                                      
+                                          <a class="list-group-item" href="#">
+                                            <img src="img/website/responsive-web-designing.png">
+                                            <p>
+                                       
+                                            Responsive Web Designing
+                                              </p>
+                                          </a>
+                                        </div>
+                                      </div>
+                                      <div class="col-12 col-lg-2 col-sm-12 col-md-6">
+                                      
+                                        <div class="list-group text-center" id="img-home">
+                                      
+                                          <a class="list-group-item" href="#">
+                                            <img src="img/website/custom-website-designing.png">
+                                            <p>
+                                      Custom Website Designing
+                                              </p>
+                                          </a>
+                                        </div>
+                                      </div>
+                                
+                                      <div class="col-12 col-lg-2 col-sm-12 col-md-6">
+                                      
+                                        <div class="list-group text-center" id="img-home">
+                                      
+                                          <a class="list-group-item" href="#">
+                                            <img src="img/website/dynamic.png">
+                                            <p>
+                                              Dynamic Website Design
+                                              </p>
+                                          </a>
+                                        </div>
+                                      </div>
+                                      <div class="col-12 col-lg-2 col-sm-12 col-md-6">
+                                      
+                                        <div class="list-group text-center" id="img-home">
+                                      
+                                          <a class="list-group-item" href="#">
+                                            <img src="img/website/static.png">
+                                            <p>
+                                              Static Website Design
+                                              </p>
+                                          </a>
+                                        </div>
+                                      </div>
+                                      <div class="col-12 col-lg-2 col-sm-12 col-md-6">
+                                      
+                                        <div class="list-group text-center" id="img-home">
+                                      
+                                          <a class="list-group-item" href="#">
+                                            <img src="img/website/multi-vendor-ecommerce-platform.png">
+                                            <p>
+                                              Website Redesigning Services
+                                              </p>
+                                          </a>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </li>
+                            <li class="nav-item dropdown dropdown-mega position-static">
+                              <a class="nav-link dropdown-toggle" href="development.html"> <img src="img/digital/digital-marketing.png" alt=""> Web Devp</a>
+                              <div class="dropdown-menu shadow bg-secondary" id="bg-drop-down">
+                                <div class="mega-content px-4">
+                                  <div class="container-fluid">
+                                    <div class="row">
+                                      <div class="col-12 col-lg-2 col-sm-12 col-md-6 mb-3">
+                                       
+                                        <div class="list-group text-center" id="img-home">
+                                      
+                                          <a class="list-group-item" href="#">
+                                            <img src="img/digital/seo-services.png">
+                                            <p>
+                                       
+                                              AMP Development
+                                              </p>
+                                          </a>
+                                          
+                                        </div>
+                                      </div>
+                                      <div class="col-12 col-lg-2 col-sm-12 col-md-6  mb-3">
+                                      
+                                        <div class="list-group text-center" id="img-home">
+                                      
+                                      
+                                          <a class="list-group-item" href="#">
+                                            <img src="img/web-devploment/php.png">
+                                            <p>
+                                       
+                                              PHP Web Development
+                                              </p>
+                                          </a>
+                                          
+                                        </div>
+                                      </div>
+                                      <div class="col-12 col-lg-2 col-sm-12 col-md-6">
+          
+                                        <div class="list-group text-center" id="img-home">
+                                      
+                                      
+                                          <a class="list-group-item" href="#">
+                                            <img src="img/web-devploment/wordpress.png">
+                                            <p>
+                                       
+                                              Wordpress Web Development
+                                              </p>
+                                          </a>
+                                        </div>
+                                      </div>
+                                      <div class="col-12 col-lg-2 col-sm-12 col-md-6  mb-3">
+                                        
+                                        <div class="list-group text-center" id="img-home">
+                                      
+                                          <a class="list-group-item" href="#">
+                                            <img src="img/web-devploment/magento.png">
+                                            <p>
+                                       
+                                              Magento Web Development
+                                              </p>
+                                          </a>
+                                          <!-- <a class="list-group-item" href="#">Drupal Web Development</a>
+                                          <a class="list-group-item" href="#">3rd Party API Integration</a> -->
+                                        </div>
+                                      </div>
+                                  
+                                      <div class="col-12 col-lg-2 col-sm-12 col-md-6">
+                                      
+                                        <div class="list-group text-center" id="img-home">
+                                      
+                                          <a class="list-group-item" href="#">
+                                            <img src="img/web-devploment/costom.png">
+                                            <p>
+                                       
+                                              Custom Web Development
+                                              </p>
+                                          </a>
+                                        </div>
+                                      </div>
+                                      <div class="col-12 col-lg-2 col-sm-12 col-md-6">
+                                      
+                                        <div class="list-group text-center" id="img-home">
+                                      
+                                          <a class="list-group-item" href="#">
+                                            <img src="img/web-devploment/web-portal.png">
+                                            <p>
+                                              Web Portal Development
+                                              </p>
+                                          </a>
+                                        </div>
+                                      </div>
+                                      <div class="col-12 col-lg-2 col-sm-12 col-md-6">
+                                      
+                                        <div class="list-group text-center" id="img-home">
+                                      
+                                          <a class="list-group-item" href="#">
+                                            <img src="img/web-devploment/cms.png">
+                                            <p>
+                                       
+                                              CMS Web Development
+                                              </p>
+                                          </a>
+                                        </div>
+                                      </div>
+                                      <div class="col-12 col-lg-2 col-sm-12 col-md-6">
+                                      
+                                        <div class="list-group text-center" id="img-home">
+                                      
+                                          <a class="list-group-item" href="#">
+                                            <img src="img/web-devploment/joomla.png">
+                                            <p>
+                                       
+                                              Joomla Web Development
+                                              </p>
+                                          </a>
+                                        </div>
+                                      </div>
+                                   
+                                      <div class="col-12 col-lg-2 col-sm-12 col-md-6">
+                                      
+                                        <div class="list-group text-center" id="img-home">
+                                      
+                                          <a class="list-group-item" href="#">
+                                            <img src="img/web-devploment/drupal.png">
+                                            <p>
+                                       
+                                              Drupal Web Development
+                                              </p>
+                                          </a>
+                                        </div>
+                                      </div>
+                                  
+                                      <div class="col-12 col-lg-2 col-sm-12 col-md-6">
+                                      
+                                        <div class="list-group text-center" id="img-home">
+                                      
+                                          <a class="list-group-item" href="#">
+                                            <img src="img/web-devploment/api.png">
+                                            <p>
+                                              3rd Party API Integration
+                                              
+                                              </p>
+                                          </a>
+                                        </div>
+                                      </div>
+                                
+                                   
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </li>
+                        
+                            <li class="nav-item dropdown dropdown-mega position-static">
+                              <a class="nav-link dropdown-toggle" href="digital.html"> <img src="img/digital/digital-marketing.png" alt=""> Digital Marketing</a>
+                              <div class="dropdown-menu shadow bg-secondary" id="bg-drop-down">
+                                <div class="mega-content px-4">
+                                  <div class="container-fluid">
+                                    <div class="row">
+                                      <div class="col-12 col-lg-2 col-sm-12 col-md-6 mb-3">
+                                       
+                                        <div class="list-group text-center" id="img-home">
+                                      
+                                          <a class="list-group-item" href="#">
+                                            <img src="img/digital/seo-services.png">
+                                            <p>
+                                       
+                                              SEO Services
+                                              </p>
+                                          </a>
+                                          
+                                        </div>
+                                      </div>
+                                      <div class="col-12 col-lg-2 col-sm-12 col-md-6  mb-3">
+                                      
+                                        <div class="list-group text-center" id="img-home">
+                                      
+                                      
+                                          <a class="list-group-item" href="#">
+                                            <img src="img/digital/affiliate-marketing.png">
+                                            <p>
+                                       
+                                              Affiliate Marketing
+                                              </p>
+                                          </a>
+                                          
+                                        </div>
+                                      </div>
+                                      <div class="col-12 col-lg-2 col-sm-12 col-md-6">
+          
+                                        <div class="list-group text-center" id="img-home">
+                                      
+                                      
+                                          <a class="list-group-item" href="#">
+                                            <img src="img/digital/social-media-marketing.png">
+                                            <p>
+                                       
+                                              Online Marketing Company
+                                              </p>
+                                          </a>
+                                        </div>
+                                      </div>
+                                      <div class="col-12 col-lg-2 col-sm-12 col-md-6  mb-3">
+                                        
+                                        <div class="list-group text-center" id="img-home">
+                                      
+                                          <a class="list-group-item" href="#">
+                                            <img src="img/digital/social-media-management.png">
+                                            <p>
+                                       
+                                              Conversion Rate Optimization
+                                              </p>
+                                          </a>
+                                          <!-- <a class="list-group-item" href="#">Drupal Web Development</a>
+                                          <a class="list-group-item" href="#">3rd Party API Integration</a> -->
+                                        </div>
+                                      </div>
+                                  
+                                      <div class="col-12 col-lg-2 col-sm-12 col-md-6">
+                                      
+                                        <div class="list-group text-center" id="img-home">
+                                      
+                                          <a class="list-group-item" href="#">
+                                            <img src="img/digital/content-marketing-services.png">
+                                            <p>
+                                       
+                                              Content Marketing Services
+                                              </p>
+                                          </a>
+                                        </div>
+                                      </div>
+                                      <div class="col-12 col-lg-2 col-sm-12 col-md-6">
+                                      
+                                        <div class="list-group text-center" id="img-home">
+                                      
+                                          <a class="list-group-item" href="#">
+                                            <img src="img/digital/multivariate-testing.png">
+                                            <p>
+                                              Multivariate Testing
+                                              </p>
+                                          </a>
+                                        </div>
+                                      </div>
+                                      <div class="col-12 col-lg-2 col-sm-12 col-md-6">
+                                      
+                                        <div class="list-group text-center" id="img-home">
+                                      
+                                          <a class="list-group-item" href="#">
+                                            <img src="img/digital/email-marketing-services.png">
+                                            <p>
+                                       
+                                              Email Marketing Services
+                                              </p>
+                                          </a>
+                                        </div>
+                                      </div>
+                                      <div class="col-12 col-lg-2 col-sm-12 col-md-6">
+                                      
+                                        <div class="list-group text-center" id="img-home">
+                                      
+                                          <a class="list-group-item" href="#">
+                                            <img src="img/digital/link-building-services.png">
+                                            <p>
+                                       
+                                              Link Building Services
+                                              </p>
+                                          </a>
+                                        </div>
+                                      </div>
+                                   
+                                      <div class="col-12 col-lg-2 col-sm-12 col-md-6">
+                                      
+                                        <div class="list-group text-center" id="img-home">
+                                      
+                                          <a class="list-group-item" href="#">
+                                            <img src="img/digital/ocal-business-listing-icon-38.png">
+                                            <p>
+                                       
+                                              Online Reputation Management
+                                              </p>
+                                          </a>
+                                        </div>
+                                      </div>
+                                  
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </li>
+                            <li class="nav-item dropdown dropdown-mega position-static">
+                              <a class="nav-link dropdown-toggle" href="graphics.html"> <img src="img/graphics/graphic-designing.png" alt="">   Graphics </a>
+                              <div class="dropdown-menu shadow bg-secondary" id="bg-drop-down">
+                                <div class="mega-content px-4">
+                                  <div class="container-fluid">
+                                    <div class="row">
+                                      <div class="col-12 col-lg-2 col-sm-12 col-md-6 mb-3">
+                                       
+                                        <div class="list-group text-center" id="img-home">
+                                      
+                                          <a class="list-group-item" href="#">
+                                            <img src="img/graphics/logo-designing.png">
+                                            <p>
+                                       Logo Designing
+                                              </p>
+                                          </a>
+                                          
+                                        </div>
+                                      </div>
+                                      <div class="col-12 col-lg-2 col-sm-12 col-md-6  mb-3">
+                                      
+                                        <div class="list-group text-center" id="img-home">
+                                      
+                                      
+                                          <a class="list-group-item" href="#">
+                                            <img src="img/graphics/pdf-brochure-designing.png">
+                                            <p>
+                                       
+                                              Brochure Designing
+                                              </p>
+                                          </a>
+                                          
+                                        </div>
+                                      </div>
+                                      <div class="col-12 col-lg-2 col-sm-12 col-md-6">
+          
+                                        <div class="list-group text-center" id="img-home">
+                                      
+                                      
+                                          <a class="list-group-item" href="#">
+                                            <img src="img/graphics/resumes-cv-designing.png">
+                                            <p>
+                                       
+                                              Flipbook Designing
+                                              </p>
+                                          </a>
+                                        </div>
+                                      </div>
+                                      <div class="col-12 col-lg-2 col-sm-12 col-md-6  mb-3">
+                                        
+                                        <div class="list-group text-center" id="img-home">
+                                      
+                                          <a class="list-group-item" href="#">
+                                            <img src="img/graphics/Animated-Explainer-Videos.png">
+                                            <p>
+                                       
+                                              Animated Explainer Videos
+                                              </p>
+                                          </a>
+                                          <!-- <a class="list-group-item" href="#">Drupal Web Development</a>
+                                          <a class="list-group-item" href="#">3rd Party API Integration</a> -->
+                                        </div>
+                                      </div>
+                                  
+                                      <div class="col-12 col-lg-2 col-sm-12 col-md-6">
+                                      
+                                        <div class="list-group text-center" id="img-home">
+                                      
+                                          <a class="list-group-item" href="#">
+                                            <img src="img/graphics/graphic-designing-for-social-media.png">
+                                            <p>
+                                       
+                                              Graphic Designing For Social Media
+                                              </p>
+                                          </a>
+                                        </div>
+                                      </div>
+                                      <div class="col-12 col-lg-2 col-sm-12 col-md-6">
+                                      
+                                        <div class="list-group text-center" id="img-home">
+                                      
+                                          <a class="list-group-item" href="#">
+                                            <img src="img/graphics/banner-designing-services.png">
+                                            <p>
+                                       Banner Designing Services
+                                              </p>
+                                          </a>
+                                        </div>
+                                      </div>
+                                      <div class="col-12 col-lg-2 col-sm-12 col-md-6">
+                                      
+                                        <div class="list-group text-center" id="img-home">
+                                      
+                                          <a class="list-group-item" href="#">
+                                            <img src="img/graphics/photoshop-editing.png">
+                                            <p>
+                                       
+                                              Photoshop Editing
+                                              </p>
+                                          </a>
+                                        </div>
+                                      </div>
+                                   
+                                   
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </li>
+                            <li class="nav-item dropdown dropdown-mega position-static">
+                              <a class="nav-link dropdown-toggle" href="app.html" ><img src="img/App/mobile-apps.png" alt=""> App</a>
+                              <div class="dropdown-menu shadow bg-secondary" id="bg-drop-down">
+                                <div class="mega-content px-4">
+                                  <div class="container-fluid">
+                                    <div class="row">
+                                      <div class="col-12 col-lg-2 col-sm-12 col-md-6 mb-3">
+                                       
+                                        <div class="list-group text-center" id="img-home">
+                                      
+                                          <a class="list-group-item" href="#">
+                                            <img src="img/App/IOS.png">
+                                            <p>
+                                              IOS App Development
+                                              </p>
+                                          </a>
+                                          
+                                        </div>
+                                      </div>
+                                      <div class="col-12 col-lg-2 col-sm-12 col-md-6  mb-3">
+                                      
+                                        <div class="list-group text-center" id="img-home">
+                                      
+                                      
+                                          <a class="list-group-item" href="#">
+                                            <img src="img/App/android-app-developmen.png">
+                                            <p>
+                                       
+                                              Android App Development
+                                              </p>
+                                          </a>
+                                          
+                                        </div>
+                                      </div>
+                                      <div class="col-12 col-lg-2 col-sm-12 col-md-6">
+          
+                                        <div class="list-group text-center" id="img-home">
+                                      
+                                      
+                                          <a class="list-group-item" href="#">
+                                            <img src="img/App/Windows-Apps.png">
+                                            <p>
+                                       
+                                              Windows Apps Development
+                                              </p>
+                                          </a>
+                                        </div>
+                                      </div>
+                                      <div class="col-12 col-lg-2 col-sm-12 col-md-6  mb-3">
+                                        
+                                        <div class="list-group text-center" id="img-home">
+                                      
+                                          <a class="list-group-item" href="#">
+                                            <img src="img/App/blackberry-apps%20-development.png">
+                                            <p>
+                                       
+                                              Blackberry Apps Development
+                                              </p>
+                                          </a>
+                                          <!-- <a class="list-group-item" href="#">Drupal Web Development</a>
+                                          <a class="list-group-item" href="#">3rd Party API Integration</a> -->
+                                        </div>
+                                      </div>
+                                  
+                                      <div class="col-12 col-lg-2 col-sm-12 col-md-6">
+                                      
+                                        <div class="list-group text-center" id="img-home">
+                                      
+                                          <a class="list-group-item" href="#">
+                                            <img src="img/App/native-appt.png">
+                                            <p>
+                                       
+                                                Native App Development
+                                              </p>
+                                          </a>
+                                        </div>
+                                      </div>
+                                      <div class="col-12 col-lg-2 col-sm-12 col-md-6">
+                                      
+                                        <div class="list-group text-center" id="img-home">
+                                      
+                                          <a class="list-group-item" href="#">
+                                            <img src="img/App/phonegap-app.png">
+                                            <p>
+                                              Phonegap App Development
+                                              </p>
+                                          </a>
+                                        </div>
+                                      </div>
+                                
+                                   
+                                   
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </li>
+                            <li class="nav-item dropdown dropdown-mega position-static">
+                              <a class="nav-link dropdown-toggle" href="software.html"><img src="img/software/software.png" alt=""> Software</a>
+                              <div class="dropdown-menu shadow bg-secondary" id="bg-drop-down">
+                                <div class="mega-content px-4">
+                                  <div class="container-fluid">
+                                    <div class="row">
+                                      <div class="col-12 col-lg-2 col-sm-12 col-md-6 mb-3">
+                                       
+                                        <div class="list-group text-center" id="img-home">
+                                      
+                                          <a class="list-group-item" href="#">
+                                            <img src="img/web-devploment/custom-base-software.png">
+                                            <p>
+                                              Custom Base Software
+                                              </p>
+                                          </a>
+                                          
+                                        </div>
+                                      </div>
+                                      <div class="col-12 col-lg-2 col-sm-12 col-md-6  mb-3">
+                                      
+                                        <div class="list-group text-center" id="img-home">
+                                      
+                                      
+                                          <a class="list-group-item" href="#">
+                                            <img src="img/web-devploment/school-management-software.png">
+                                            <p>
+                                              School Management Software
+                                              </p>
+                                          </a>
+                                          
+                                        </div>
+                                      </div>
+                                      <div class="col-12 col-lg-2 col-sm-12 col-md-6">
+          
+                                        <div class="list-group text-center" id="img-home">
+                                      
+                                      
+                                          <a class="list-group-item" href="#">
+                                            <img src="img/web-devploment/barcode-software.png">
+                                            <p>
+                                       
+                                              Barcode Software
+                                              </p>
+                                          </a>
+                                        </div>
+                                      </div>
+                                      <div class="col-12 col-lg-2 col-sm-12 col-md-6  mb-3">
+                                        
+                                        <div class="list-group text-center" id="img-home">
+                                      
+                                          <a class="list-group-item" href="#">
+                                            <img src="img/web-devploment/inventory-management-software.png">
+                                            <p>
+                                       
+                                              Inventory Management Software
+                                              </p>
+                                          </a>
+                                          <!-- <a class="list-group-item" href="#">Drupal Web Development</a>
+                                          <a class="list-group-item" href="#">3rd Party API Integration</a> -->
+                                        </div>
+                                      </div>
+                                  
+                                      <div class="col-12 col-lg-2 col-sm-12 col-md-6">
+                                      
+                                        <div class="list-group text-center" id="img-home">
+                                      
+                                          <a class="list-group-item" href="#">
+                                            <img src="img/web-devploment/loyalty-program-software.png">
+                                            <p>
+                                       
+                                              Loyalty Program Software
+                                              </p>
+                                          </a>
+                                        </div>
+                                      </div>
+                                      <div class="col-12 col-lg-2 col-sm-12 col-md-6">
+                                      
+                                        <div class="list-group text-center" id="img-home">
+                                      
+                                          <a class="list-group-item" href="#">
+                                            <img src="img/web-devploment/multi-level-marketing-software.png">
+                                            <p>
+                                              Multi Level Marketing Software
+                                              </p>
+                                          </a>
+                                        </div>
+                                      </div>
+                                
+                                      <div class="col-12 col-lg-2 col-sm-12 col-md-6">
+                                      
+                                        <div class="list-group text-center" id="img-home">
+                                      
+                                          <a class="list-group-item" href="#">
+                                            <img src="img/web-devploment/sales-ero-software.png">
+                                            <p>
+                                              Sales ERP Software
+                                              </p>
+                                          </a>
+                                        </div>
+                                      </div>
+                                   
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </li>
                          
+                          
+                          </ul>
+                        
                         </div>
                       </div>
-                    </button>
-                    <div class="collapse navbar-collapse">
-                      <ul class="navbar-nav mx-auto">
-                        <!-- <li class="nav-item">
-                          <a class="nav-link active" aria-current="page" href="#">Home</a>
-                        </li> -->
-                        <li class="nav-item dropdown dropdown-mega position-static">
-                          <a class="nav-link dropdown-toggle" href="#bg-drop-down" data-bs-toggle="dropdown" data-bs-auto-close="outside"><img src="img/website/web-designing.png" alt=""> Web Design</a>
-                          <div class="dropdown-menu shadow bg-secondary" id="bg-drop-down">
-                            <div class="mega-content px-4">
-                              <div class="container-fluid">
-                                <div class="row">
-                                  <div class="col-12 col-lg-2 col-sm-12 col-md-6 mb-3">
-                                   
-                                    <div class="list-group text-center" id="img-home">
-                                  
-                                      <a class="list-group-item" href="#">
-                                        <img src="img/website/corporate-website.png">
-                                        <p>
-                                   Corporate Website
-                                          </p>
-                                      </a>
-                                      
-                                    </div>
-                                  </div>
-                                  <div class="col-12 col-lg-2 col-sm-12 col-md-6  mb-3">
-                                  
-                                    <div class="list-group text-center" id="img-home">
-                                  
-                                  
-                                      <a class="list-group-item" href="#">
-                                        <img src="img/website/ecommerce-website.png">
-                                        <p>
-                                   
-                                          Ecommerce Website
-                                          </p>
-                                      </a>
-                                      
-                                    </div>
-                                  </div>
-                                  <div class="col-12 col-lg-2 col-sm-12 col-md-6">
-      
-                                    <div class="list-group text-center" id="img-home">
-                                  
-                                  
-                                      <a class="list-group-item" href="#">
-                                        <img src="img/website/landing-page.png">
-                                        <p>
-                                   
-                                          Mobile Web Design
-                                          </p>
-                                      </a>
-                                    </div>
-                                  </div>
-                                  <div class="col-12 col-lg-2 col-sm-12 col-md-6  mb-3">
-                                    
-                                    <div class="list-group text-center" id="img-home">
-                                  
-                                      <a class="list-group-item" href="#">
-                                        <img src="img/website/psd-to-html-designing.png">
-                                        <p>
-                                   
-                                        PSD To Html Designing
-                                          </p>
-                                      </a>
-                                      <!-- <a class="list-group-item" href="#">Drupal Web Development</a>
-                                      <a class="list-group-item" href="#">3rd Party API Integration</a> -->
-                                    </div>
-                                  </div>
-                              
-                                  <div class="col-12 col-lg-2 col-sm-12 col-md-6">
-                                  
-                                    <div class="list-group text-center" id="img-home">
-                                  
-                                      <a class="list-group-item" href="#">
-                                        <img src="img/website/responsive-web-designing.png">
-                                        <p>
-                                   
-                                        Responsive Web Designing
-                                          </p>
-                                      </a>
-                                    </div>
-                                  </div>
-                                  <div class="col-12 col-lg-2 col-sm-12 col-md-6">
-                                  
-                                    <div class="list-group text-center" id="img-home">
-                                  
-                                      <a class="list-group-item" href="#">
-                                        <img src="img/website/custom-website-designing.png">
-                                        <p>
-                                  Custom Website Designing
-                                          </p>
-                                      </a>
-                                    </div>
-                                  </div>
-                            
-                                  <div class="col-12 col-lg-2 col-sm-12 col-md-6">
-                                  
-                                    <div class="list-group text-center" id="img-home">
-                                  
-                                      <a class="list-group-item" href="#">
-                                        <img src="img/website/dynamic.png">
-                                        <p>
-                                          Dynamic Website Design
-                                          </p>
-                                      </a>
-                                    </div>
-                                  </div>
-                                  <div class="col-12 col-lg-2 col-sm-12 col-md-6">
-                                  
-                                    <div class="list-group text-center" id="img-home">
-                                  
-                                      <a class="list-group-item" href="#">
-                                        <img src="img/website/static.png">
-                                        <p>
-                                          Static Website Design
-                                          </p>
-                                      </a>
-                                    </div>
-                                  </div>
-                                  <div class="col-12 col-lg-2 col-sm-12 col-md-6">
-                                  
-                                    <div class="list-group text-center" id="img-home">
-                                  
-                                      <a class="list-group-item" href="#">
-                                        <img src="img/website/multi-vendor-ecommerce-platform.png">
-                                        <p>
-                                          Website Redesigning Services
-                                          </p>
-                                      </a>
-                                    </div>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </li>
-                        <li class="nav-item dropdown dropdown-mega position-static">
-                          <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" data-bs-auto-close="outside"> <img src="img/digital/digital-marketing.png" alt=""> Web Devp</a>
-                          <div class="dropdown-menu shadow bg-secondary" id="bg-drop-down">
-                            <div class="mega-content px-4">
-                              <div class="container-fluid">
-                                <div class="row">
-                                  <div class="col-12 col-lg-2 col-sm-12 col-md-6 mb-3">
-                                   
-                                    <div class="list-group text-center" id="img-home">
-                                  
-                                      <a class="list-group-item" href="#">
-                                        <img src="img/digital/seo-services.png">
-                                        <p>
-                                   
-                                          AMP Development
-                                          </p>
-                                      </a>
-                                      
-                                    </div>
-                                  </div>
-                                  <div class="col-12 col-lg-2 col-sm-12 col-md-6  mb-3">
-                                  
-                                    <div class="list-group text-center" id="img-home">
-                                  
-                                  
-                                      <a class="list-group-item" href="#">
-                                        <img src="img/web-devploment/php.png">
-                                        <p>
-                                   
-                                          PHP Web Development
-                                          </p>
-                                      </a>
-                                      
-                                    </div>
-                                  </div>
-                                  <div class="col-12 col-lg-2 col-sm-12 col-md-6">
-      
-                                    <div class="list-group text-center" id="img-home">
-                                  
-                                  
-                                      <a class="list-group-item" href="#">
-                                        <img src="img/web-devploment/wordpress.png">
-                                        <p>
-                                   
-                                          Wordpress Web Development
-                                          </p>
-                                      </a>
-                                    </div>
-                                  </div>
-                                  <div class="col-12 col-lg-2 col-sm-12 col-md-6  mb-3">
-                                    
-                                    <div class="list-group text-center" id="img-home">
-                                  
-                                      <a class="list-group-item" href="#">
-                                        <img src="img/web-devploment/magento.png">
-                                        <p>
-                                   
-                                          Magento Web Development
-                                          </p>
-                                      </a>
-                                      <!-- <a class="list-group-item" href="#">Drupal Web Development</a>
-                                      <a class="list-group-item" href="#">3rd Party API Integration</a> -->
-                                    </div>
-                                  </div>
-                              
-                                  <div class="col-12 col-lg-2 col-sm-12 col-md-6">
-                                  
-                                    <div class="list-group text-center" id="img-home">
-                                  
-                                      <a class="list-group-item" href="#">
-                                        <img src="img/web-devploment/costom.png">
-                                        <p>
-                                   
-                                          Custom Web Development
-                                          </p>
-                                      </a>
-                                    </div>
-                                  </div>
-                                  <div class="col-12 col-lg-2 col-sm-12 col-md-6">
-                                  
-                                    <div class="list-group text-center" id="img-home">
-                                  
-                                      <a class="list-group-item" href="#">
-                                        <img src="img/web-devploment/web-portal.png">
-                                        <p>
-                                          Web Portal Development
-                                          </p>
-                                      </a>
-                                    </div>
-                                  </div>
-                                  <div class="col-12 col-lg-2 col-sm-12 col-md-6">
-                                  
-                                    <div class="list-group text-center" id="img-home">
-                                  
-                                      <a class="list-group-item" href="#">
-                                        <img src="img/web-devploment/cms.png">
-                                        <p>
-                                   
-                                          CMS Web Development
-                                          </p>
-                                      </a>
-                                    </div>
-                                  </div>
-                                  <div class="col-12 col-lg-2 col-sm-12 col-md-6">
-                                  
-                                    <div class="list-group text-center" id="img-home">
-                                  
-                                      <a class="list-group-item" href="#">
-                                        <img src="img/web-devploment/joomla.png">
-                                        <p>
-                                   
-                                          Joomla Web Development
-                                          </p>
-                                      </a>
-                                    </div>
-                                  </div>
-                               
-                                  <div class="col-12 col-lg-2 col-sm-12 col-md-6">
-                                  
-                                    <div class="list-group text-center" id="img-home">
-                                  
-                                      <a class="list-group-item" href="#">
-                                        <img src="img/web-devploment/drupal.png">
-                                        <p>
-                                   
-                                          Drupal Web Development
-                                          </p>
-                                      </a>
-                                    </div>
-                                  </div>
-                              
-                                  <div class="col-12 col-lg-2 col-sm-12 col-md-6">
-                                  
-                                    <div class="list-group text-center" id="img-home">
-                                  
-                                      <a class="list-group-item" href="#">
-                                        <img src="img/web-devploment/api.png">
-                                        <p>
-                                          3rd Party API Integration
-                                          
-                                          </p>
-                                      </a>
-                                    </div>
-                                  </div>
-                            
-                               
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </li>
-                    
-                        <li class="nav-item dropdown dropdown-mega position-static">
-                          <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" data-bs-auto-close="outside"> <img src="img/digital/digital-marketing.png" alt=""> Digital Marketing</a>
-                          <div class="dropdown-menu shadow bg-secondary" id="bg-drop-down">
-                            <div class="mega-content px-4">
-                              <div class="container-fluid">
-                                <div class="row">
-                                  <div class="col-12 col-lg-2 col-sm-12 col-md-6 mb-3">
-                                   
-                                    <div class="list-group text-center" id="img-home">
-                                  
-                                      <a class="list-group-item" href="#">
-                                        <img src="img/digital/seo-services.png">
-                                        <p>
-                                   
-                                          SEO Services
-                                          </p>
-                                      </a>
-                                      
-                                    </div>
-                                  </div>
-                                  <div class="col-12 col-lg-2 col-sm-12 col-md-6  mb-3">
-                                  
-                                    <div class="list-group text-center" id="img-home">
-                                  
-                                  
-                                      <a class="list-group-item" href="#">
-                                        <img src="img/digital/affiliate-marketing.png">
-                                        <p>
-                                   
-                                          Affiliate Marketing
-                                          </p>
-                                      </a>
-                                      
-                                    </div>
-                                  </div>
-                                  <div class="col-12 col-lg-2 col-sm-12 col-md-6">
-      
-                                    <div class="list-group text-center" id="img-home">
-                                  
-                                  
-                                      <a class="list-group-item" href="#">
-                                        <img src="img/digital/social-media-marketing.png">
-                                        <p>
-                                   
-                                          Online Marketing Company
-                                          </p>
-                                      </a>
-                                    </div>
-                                  </div>
-                                  <div class="col-12 col-lg-2 col-sm-12 col-md-6  mb-3">
-                                    
-                                    <div class="list-group text-center" id="img-home">
-                                  
-                                      <a class="list-group-item" href="#">
-                                        <img src="img/digital/social-media-management.png">
-                                        <p>
-                                   
-                                          Conversion Rate Optimization
-                                          </p>
-                                      </a>
-                                      <!-- <a class="list-group-item" href="#">Drupal Web Development</a>
-                                      <a class="list-group-item" href="#">3rd Party API Integration</a> -->
-                                    </div>
-                                  </div>
-                              
-                                  <div class="col-12 col-lg-2 col-sm-12 col-md-6">
-                                  
-                                    <div class="list-group text-center" id="img-home">
-                                  
-                                      <a class="list-group-item" href="#">
-                                        <img src="img/digital/content-marketing-services.png">
-                                        <p>
-                                   
-                                          Content Marketing Services
-                                          </p>
-                                      </a>
-                                    </div>
-                                  </div>
-                                  <div class="col-12 col-lg-2 col-sm-12 col-md-6">
-                                  
-                                    <div class="list-group text-center" id="img-home">
-                                  
-                                      <a class="list-group-item" href="#">
-                                        <img src="img/digital/multivariate-testing.png">
-                                        <p>
-                                          Multivariate Testing
-                                          </p>
-                                      </a>
-                                    </div>
-                                  </div>
-                                  <div class="col-12 col-lg-2 col-sm-12 col-md-6">
-                                  
-                                    <div class="list-group text-center" id="img-home">
-                                  
-                                      <a class="list-group-item" href="#">
-                                        <img src="img/digital/email-marketing-services.png">
-                                        <p>
-                                   
-                                          Email Marketing Services
-                                          </p>
-                                      </a>
-                                    </div>
-                                  </div>
-                                  <div class="col-12 col-lg-2 col-sm-12 col-md-6">
-                                  
-                                    <div class="list-group text-center" id="img-home">
-                                  
-                                      <a class="list-group-item" href="#">
-                                        <img src="img/digital/link-building-services.png">
-                                        <p>
-                                   
-                                          Link Building Services
-                                          </p>
-                                      </a>
-                                    </div>
-                                  </div>
-                               
-                                  <div class="col-12 col-lg-2 col-sm-12 col-md-6">
-                                  
-                                    <div class="list-group text-center" id="img-home">
-                                  
-                                      <a class="list-group-item" href="#">
-                                        <img src="img/digital/ocal-business-listing-icon-38.png">
-                                        <p>
-                                   
-                                          Online Reputation Management
-                                          </p>
-                                      </a>
-                                    </div>
-                                  </div>
-                              
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </li>
-                        <li class="nav-item dropdown dropdown-mega position-static">
-                          <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" data-bs-auto-close="outside"> <img src="img/graphics/graphic-designing.png" alt="">   Graphics </a>
-                          <div class="dropdown-menu shadow bg-secondary" id="bg-drop-down">
-                            <div class="mega-content px-4">
-                              <div class="container-fluid">
-                                <div class="row">
-                                  <div class="col-12 col-lg-2 col-sm-12 col-md-6 mb-3">
-                                   
-                                    <div class="list-group text-center" id="img-home">
-                                  
-                                      <a class="list-group-item" href="#">
-                                        <img src="img/graphics/logo-designing.png">
-                                        <p>
-                                   Logo Designing
-                                          </p>
-                                      </a>
-                                      
-                                    </div>
-                                  </div>
-                                  <div class="col-12 col-lg-2 col-sm-12 col-md-6  mb-3">
-                                  
-                                    <div class="list-group text-center" id="img-home">
-                                  
-                                  
-                                      <a class="list-group-item" href="#">
-                                        <img src="img/graphics/pdf-brochure-designing.png">
-                                        <p>
-                                   
-                                          Brochure Designing
-                                          </p>
-                                      </a>
-                                      
-                                    </div>
-                                  </div>
-                                  <div class="col-12 col-lg-2 col-sm-12 col-md-6">
-      
-                                    <div class="list-group text-center" id="img-home">
-                                  
-                                  
-                                      <a class="list-group-item" href="#">
-                                        <img src="img/graphics/resumes-cv-designing.png">
-                                        <p>
-                                   
-                                          Flipbook Designing
-                                          </p>
-                                      </a>
-                                    </div>
-                                  </div>
-                                  <div class="col-12 col-lg-2 col-sm-12 col-md-6  mb-3">
-                                    
-                                    <div class="list-group text-center" id="img-home">
-                                  
-                                      <a class="list-group-item" href="#">
-                                        <img src="img/graphics/Animated-Explainer-Videos.png">
-                                        <p>
-                                   
-                                          Animated Explainer Videos
-                                          </p>
-                                      </a>
-                                      <!-- <a class="list-group-item" href="#">Drupal Web Development</a>
-                                      <a class="list-group-item" href="#">3rd Party API Integration</a> -->
-                                    </div>
-                                  </div>
-                              
-                                  <div class="col-12 col-lg-2 col-sm-12 col-md-6">
-                                  
-                                    <div class="list-group text-center" id="img-home">
-                                  
-                                      <a class="list-group-item" href="#">
-                                        <img src="img/graphics/graphic-designing-for-social-media.png">
-                                        <p>
-                                   
-                                          Graphic Designing For Social Media
-                                          </p>
-                                      </a>
-                                    </div>
-                                  </div>
-                                  <div class="col-12 col-lg-2 col-sm-12 col-md-6">
-                                  
-                                    <div class="list-group text-center" id="img-home">
-                                  
-                                      <a class="list-group-item" href="#">
-                                        <img src="img/graphics/banner-designing-services.png">
-                                        <p>
-                                   Banner Designing Services
-                                          </p>
-                                      </a>
-                                    </div>
-                                  </div>
-                                  <div class="col-12 col-lg-2 col-sm-12 col-md-6">
-                                  
-                                    <div class="list-group text-center" id="img-home">
-                                  
-                                      <a class="list-group-item" href="#">
-                                        <img src="img/graphics/photoshop-editing.png">
-                                        <p>
-                                   
-                                          Photoshop Editing
-                                          </p>
-                                      </a>
-                                    </div>
-                                  </div>
-                               
-                               
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </li>
-                        <li class="nav-item dropdown dropdown-mega position-static">
-                          <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" data-bs-auto-close="outside"><img src="img/App/mobile-apps.png" alt=""> App</a>
-                          <div class="dropdown-menu shadow bg-secondary" id="bg-drop-down">
-                            <div class="mega-content px-4">
-                              <div class="container-fluid">
-                                <div class="row">
-                                  <div class="col-12 col-lg-2 col-sm-12 col-md-6 mb-3">
-                                   
-                                    <div class="list-group text-center" id="img-home">
-                                  
-                                      <a class="list-group-item" href="#">
-                                        <img src="img/App/IOS.png">
-                                        <p>
-                                          IOS App Development
-                                          </p>
-                                      </a>
-                                      
-                                    </div>
-                                  </div>
-                                  <div class="col-12 col-lg-2 col-sm-12 col-md-6  mb-3">
-                                  
-                                    <div class="list-group text-center" id="img-home">
-                                  
-                                  
-                                      <a class="list-group-item" href="#">
-                                        <img src="img/App/android-app-developmen.png">
-                                        <p>
-                                   
-                                          Android App Development
-                                          </p>
-                                      </a>
-                                      
-                                    </div>
-                                  </div>
-                                  <div class="col-12 col-lg-2 col-sm-12 col-md-6">
-      
-                                    <div class="list-group text-center" id="img-home">
-                                  
-                                  
-                                      <a class="list-group-item" href="#">
-                                        <img src="img/App/Windows-Apps.png">
-                                        <p>
-                                   
-                                          Windows Apps Development
-                                          </p>
-                                      </a>
-                                    </div>
-                                  </div>
-                                  <div class="col-12 col-lg-2 col-sm-12 col-md-6  mb-3">
-                                    
-                                    <div class="list-group text-center" id="img-home">
-                                  
-                                      <a class="list-group-item" href="#">
-                                        <img src="img/App/blackberry-apps%20-development.png">
-                                        <p>
-                                   
-                                          Blackberry Apps Development
-                                          </p>
-                                      </a>
-                                      <!-- <a class="list-group-item" href="#">Drupal Web Development</a>
-                                      <a class="list-group-item" href="#">3rd Party API Integration</a> -->
-                                    </div>
-                                  </div>
-                              
-                                  <div class="col-12 col-lg-2 col-sm-12 col-md-6">
-                                  
-                                    <div class="list-group text-center" id="img-home">
-                                  
-                                      <a class="list-group-item" href="#">
-                                        <img src="img/App/native-appt.png">
-                                        <p>
-                                   
-                                            Native App Development
-                                          </p>
-                                      </a>
-                                    </div>
-                                  </div>
-                                  <div class="col-12 col-lg-2 col-sm-12 col-md-6">
-                                  
-                                    <div class="list-group text-center" id="img-home">
-                                  
-                                      <a class="list-group-item" href="#">
-                                        <img src="img/App/phonegap-app.png">
-                                        <p>
-                                          Phonegap App Development
-                                          </p>
-                                      </a>
-                                    </div>
-                                  </div>
-                            
-                               
-                               
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </li>
-                        <li class="nav-item dropdown dropdown-mega position-static">
-                          <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" data-bs-auto-close="outside"><img src="img/software/software.png" alt=""> Software</a>
-                          <div class="dropdown-menu shadow bg-secondary" id="bg-drop-down">
-                            <div class="mega-content px-4">
-                              <div class="container-fluid">
-                                <div class="row">
-                                  <div class="col-12 col-lg-2 col-sm-12 col-md-6 mb-3">
-                                   
-                                    <div class="list-group text-center" id="img-home">
-                                  
-                                      <a class="list-group-item" href="#">
-                                        <img src="img/web-devploment/custom-base-software.png">
-                                        <p>
-                                          Custom Base Software
-                                          </p>
-                                      </a>
-                                      
-                                    </div>
-                                  </div>
-                                  <div class="col-12 col-lg-2 col-sm-12 col-md-6  mb-3">
-                                  
-                                    <div class="list-group text-center" id="img-home">
-                                  
-                                  
-                                      <a class="list-group-item" href="#">
-                                        <img src="img/web-devploment/school-management-software.png">
-                                        <p>
-                                          School Management Software
-                                          </p>
-                                      </a>
-                                      
-                                    </div>
-                                  </div>
-                                  <div class="col-12 col-lg-2 col-sm-12 col-md-6">
-      
-                                    <div class="list-group text-center" id="img-home">
-                                  
-                                  
-                                      <a class="list-group-item" href="#">
-                                        <img src="img/web-devploment/barcode-software.png">
-                                        <p>
-                                   
-                                          Barcode Software
-                                          </p>
-                                      </a>
-                                    </div>
-                                  </div>
-                                  <div class="col-12 col-lg-2 col-sm-12 col-md-6  mb-3">
-                                    
-                                    <div class="list-group text-center" id="img-home">
-                                  
-                                      <a class="list-group-item" href="#">
-                                        <img src="img/web-devploment/inventory-management-software.png">
-                                        <p>
-                                   
-                                          Inventory Management Software
-                                          </p>
-                                      </a>
-                                      <!-- <a class="list-group-item" href="#">Drupal Web Development</a>
-                                      <a class="list-group-item" href="#">3rd Party API Integration</a> -->
-                                    </div>
-                                  </div>
-                              
-                                  <div class="col-12 col-lg-2 col-sm-12 col-md-6">
-                                  
-                                    <div class="list-group text-center" id="img-home">
-                                  
-                                      <a class="list-group-item" href="#">
-                                        <img src="img/web-devploment/loyalty-program-software.png">
-                                        <p>
-                                   
-                                          Loyalty Program Software
-                                          </p>
-                                      </a>
-                                    </div>
-                                  </div>
-                                  <div class="col-12 col-lg-2 col-sm-12 col-md-6">
-                                  
-                                    <div class="list-group text-center" id="img-home">
-                                  
-                                      <a class="list-group-item" href="#">
-                                        <img src="img/web-devploment/multi-level-marketing-software.png">
-                                        <p>
-                                          Multi Level Marketing Software
-                                          </p>
-                                      </a>
-                                    </div>
-                                  </div>
-                            
-                                  <div class="col-12 col-lg-2 col-sm-12 col-md-6">
-                                  
-                                    <div class="list-group text-center" id="img-home">
-                                  
-                                      <a class="list-group-item" href="#">
-                                        <img src="img/web-devploment/sales-ero-software.png">
-                                        <p>
-                                          Sales ERP Software
-                                          </p>
-                                      </a>
-                                    </div>
-                                  </div>
-                               
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </li>
-                     
-                      
-                      </ul>
-                    
-                    </div>
+                    </nav>
                   </div>
-                </nav>
+                </div>
               </div>
+            </header>
+           <!-- end header  -->
+      
+       <!-- mobile view -->
+       <header class="float-panel" data-top="0" data-scroll="200" id="block-header">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="#"> <img style="width: 80px; height: 70px;" src="gyanvi-img/logo.png" alt=""></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="design.html" id="navbarDropdown" role="button">
+                    Web design
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item" href="#"> Corporate Website</a></li>
+                    <li><a class="dropdown-item" href="#">Ecommerce Website</a></li>
+                  <li><a href="#" class="dropdown-item">Mobile Web Design</a></li>
+                    <li><a class="dropdown-item" href="#">PSD To Html Designing</a></li>
+                    <li><a class="dropdown-item" href="#">Responsive Web Designing</a></li>
+                    <li><a class="dropdown-item" href="#"> Custom Website Designing</a></li>
+                    <li><a class="dropdown-item" href="#">Dynamic Website Design </a></li>
+                    <li><a class="dropdown-item" href="#">Static Website Design </a></li>
+                    <li><a  class="dropdown-item" href="#">Website Redesigning Services </a></li>
+                  </ul>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="development.html" id="navbarDropdown" role="button" >
+                    Web Developement
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item" href="#"> AMP Development </a></li>
+                    <li><a class="dropdown-item" href="#">PHP Web Development </a></li>
+                  <li><a href="#" class="dropdown-item">Wordpress Web Development</a></li>
+                    <li><a class="dropdown-item" href="#">Magento Web Development </a></li>
+                    <li><a class="dropdown-item" href="#">Custom Web Development </a></li>
+                    <li><a class="dropdown-item" href="#"> Web Portal Development </a></li>
+                    <li><a class="dropdown-item" href="#">CMS Web Development  </a></li>
+                    <li><a class="dropdown-item" href="#">Joomla Web Development  </a></li>
+                    <li><a  class="dropdown-item" href="#">Drupal Web Development  </a></li>
+                    <li><a href="#" class="dropdown-item">3rd Party API Integration </a></li>
+                  </ul>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="digital.html" id="navbarDropdown" role="button" >
+                    Digital Marketing
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item" href="#"> SEO Services</a></li>
+                    <li><a class="dropdown-item" href="#">Affiliate Marketing </a></li>
+                   <li><a class="dropdown-item" href="#">Online Marketing Company </a></li>
+                    <li><a class="dropdown-item" href="#">Conversion Rate Optimization </a></li>
+                    <li><a class="dropdown-item" href="#">Content Marketing Services</a></li>
+                    <li><a class="dropdown-item" href="#">Multivariate Testing </a></li>
+                    <li><a class="dropdown-item" href="#">Email Marketing Services</a></li>
+                    <li><a class="dropdown-item" href="#">Link Building Services </a></li>
+                    <li><a class="dropdown-item" href="#">Online Reputation Management </a></li>
+                    <li><a class="dropdown-item" href="#">Google Adwords PPC Management</a></li>
+                    
+                  </ul>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="graphics.html" id="navbarDropdown" role="button" >
+                    Graphics 
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="#"> Logo Designing</a></li>
+                    <li><a class="dropdown-item" href="#"> Brochure Designing</a></li>
+                   <li><a class="dropdown-item" href="#">   Flipbook Designing </a></li>
+                    <li><a class="dropdown-item" href="#"> Animated Explainer Videos </a></li>
+                    <li><a class="dropdown-item" href="#">Graphic Designing For Social Media</a></li>
+                    <li><a class="dropdown-item" href="#">Banner Designing Services </a></li>
+                    <li><a class="dropdown-item" href="#">Photoshop Editing</a></li>
+                                </ul>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="app.html" id="navbarDropdown" role="button" >
+                    App 
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item" href="#"> IOS App Development </a></li>
+                    <li><a class="dropdown-item" href="#">Android App Development </a></li>
+                   <li><a class="dropdown-item" href="#"> Windows Apps Development </a></li>
+                    <li><a class="dropdown-item" href="#"> Blackberry Apps Development</a></li>
+                    <li><a class="dropdown-item" href="#">Native App Development </a></li>
+                    <li><a class="dropdown-item" href="#">Phonegap App Development </a></li>
+      
+                                </ul>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="software.html" id="navbarDropdown" role="button" >
+                    Software
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item" href="#"> Custom Base Software </a></li>
+                    <li><a class="dropdown-item" href="#">School Management Software</a></li>
+                   <li><a class="dropdown-item" href="#">Barcode Software </a></li>
+                    <li><a class="dropdown-item" href="#">Inventory Management Software </a></li>
+                    <li><a class="dropdown-item" href="#">Loyalty Program Software</a></li>
+                    <li><a class="dropdown-item" href="#"> Multi Level Marketing Software</a></li>
+                    <li><a class="dropdown-item" href="#">Sales ERP Software </a></li>
+                  </ul>
+                </li>
+               
+              </ul>
+              
             </div>
           </div>
+        </nav>
         </header>
-       <!-- end header  -->
-  
-   <!-- mobile view -->
-   <header class="float-panel" data-top="0" data-scroll="200" id="block-header">
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#"> <img style="width: 80px; height: 70px;" src="gyanvi-img/logo.png" alt=""></a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                Web design
-              </a>
-              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <li><a class="dropdown-item" href="#"> Corporate Website</a></li>
-                <li><a class="dropdown-item" href="#">Ecommerce Website</a></li>
-              <li><a href="#" class="dropdown-item">Mobile Web Design</a></li>
-                <li><a class="dropdown-item" href="#">PSD To Html Designing</a></li>
-                <li><a class="dropdown-item" href="#">Responsive Web Designing</a></li>
-                <li><a class="dropdown-item" href="#"> Custom Website Designing</a></li>
-                <li><a class="dropdown-item" href="#">Dynamic Website Design </a></li>
-                <li><a class="dropdown-item" href="#">Static Website Design </a></li>
-                <li><a  class="dropdown-item" href="#">Website Redesigning Services </a></li>
-              </ul>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                Web Developement
-              </a>
-              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <li><a class="dropdown-item" href="#"> AMP Development </a></li>
-                <li><a class="dropdown-item" href="#">PHP Web Development </a></li>
-              <li><a href="#" class="dropdown-item">Wordpress Web Development</a></li>
-                <li><a class="dropdown-item" href="#">Magento Web Development </a></li>
-                <li><a class="dropdown-item" href="#">Custom Web Development </a></li>
-                <li><a class="dropdown-item" href="#"> Web Portal Development </a></li>
-                <li><a class="dropdown-item" href="#">CMS Web Development  </a></li>
-                <li><a class="dropdown-item" href="#">Joomla Web Development  </a></li>
-                <li><a  class="dropdown-item" href="#">Drupal Web Development  </a></li>
-                <li><a href="#" class="dropdown-item">3rd Party API Integration </a></li>
-              </ul>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                Digital Marketing
-              </a>
-              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <li><a class="dropdown-item" href="#"> SEO Services</a></li>
-                <li><a class="dropdown-item" href="#">Affiliate Marketing </a></li>
-               <li><a class="dropdown-item" href="#">Online Marketing Company </a></li>
-                <li><a class="dropdown-item" href="#">Conversion Rate Optimization </a></li>
-                <li><a class="dropdown-item" href="#">Content Marketing Services</a></li>
-                <li><a class="dropdown-item" href="#">Multivariate Testing </a></li>
-                <li><a class="dropdown-item" href="#">Email Marketing Services</a></li>
-                <li><a class="dropdown-item" href="#">Link Building Services </a></li>
-                <li><a class="dropdown-item" href="#">Online Reputation Management </a></li>
-                <li><a class="dropdown-item" href="#">Google Adwords PPC Management</a></li>
-                
-              </ul>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                Graphics 
-              </a>
-              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <li><a class="dropdown-item" href="#"> Logo Designing</a></li>
-                <li><a class="dropdown-item" href="#"> Brochure Designing</a></li>
-               <li><a class="dropdown-item" href="#">   Flipbook Designing </a></li>
-                <li><a class="dropdown-item" href="#"> Animated Explainer Videos </a></li>
-                <li><a class="dropdown-item" href="#">Graphic Designing For Social Media</a></li>
-                <li><a class="dropdown-item" href="#">Banner Designing Services </a></li>
-                <li><a class="dropdown-item" href="#">Photoshop Editing</a></li>
-                            </ul>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                App 
-              </a>
-              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <li><a class="dropdown-item" href="#"> IOS App Development </a></li>
-                <li><a class="dropdown-item" href="#">Android App Development </a></li>
-               <li><a class="dropdown-item" href="#"> Windows Apps Development </a></li>
-                <li><a class="dropdown-item" href="#"> Blackberry Apps Development</a></li>
-                <li><a class="dropdown-item" href="#">Native App Development </a></li>
-                <li><a class="dropdown-item" href="#">Phonegap App Development </a></li>
-  
-                            </ul>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                Software
-              </a>
-              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <li><a class="dropdown-item" href="#"> Custom Base Software </a></li>
-                <li><a class="dropdown-item" href="#">School Management Software</a></li>
-               <li><a class="dropdown-item" href="#">Barcode Software </a></li>
-                <li><a class="dropdown-item" href="#">Inventory Management Software </a></li>
-                <li><a class="dropdown-item" href="#">Loyalty Program Software</a></li>
-                <li><a class="dropdown-item" href="#"> Multi Level Marketing Software</a></li>
-                <li><a class="dropdown-item" href="#">Sales ERP Software </a></li>
-              </ul>
-            </li>
-           
-          </ul>
-          
-        </div>
-      </div>
-    </nav>
-    </header>
-    <!-- end mobile view -->
-  <!-- end mobile view -->
+        <!-- end mobile view -->
   <section>
     <div class="container">
       <div class="row">
