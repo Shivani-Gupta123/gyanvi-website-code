@@ -6,7 +6,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Terms&Condition</title>
+    <title>SEO</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/responsive.css">
@@ -74,6 +74,24 @@
       color: white;
     }
 
+    .banner-slider-mobile {
+      margin-top: 20px;
+    }
+    .carousel-caption h3 {
+      font-size: 1.5rem; /* Adjust heading size for smaller screens */
+    }
+    .carousel-caption p {
+      font-size: 1rem; /* Adjust paragraph size for smaller screens */
+    }
+    .btn-top a {
+      margin-right: 10px;
+    }
+
+    .whatsapp{
+      top: 87%;
+      left: 10px;
+      position: fixed ;
+    }
     @media(min-width:1024px) {
       .menu{
         display: none;
@@ -81,13 +99,19 @@
     }
 
     @media (min-width: 768px) {
-    .info{
+      .carousel-caption h3 {
+        font-size: 2rem; /* Adjust heading size for medium and larger screens */
+      }
+      .carousel-caption p {
+        font-size: 1.2rem; /* Adjust paragraph size for medium and larger screens */
+      }
+      .info{
         padding-left: 0px;
       }
     }
 
     @media (max-width:567px){
-    .tagline{
+      .tagline{
         font-size: 18px;
       }
       .me-auto .phone{
@@ -100,8 +124,14 @@
       .top-bar svg{
         height: 10px;
       }
+      .carousel-inner .d-block{
+        width: 100%;
+        height: auto;
+      }
+      .bd-highlight span{
+        font-weight: 300;
+      }
     }
-
 </style>
 </head>
 
@@ -212,16 +242,16 @@
   </nav>
        <!-- end top bar -->
   
-       <!-- start header desktop  -->
+        <!-- start header desktop  -->
        
-      <header class="float-panel" data-top="0" data-scroll="200" id="hide-header">
+        <header class="float-panel" data-top="0" data-scroll="200" id="hide-header">
           <div class="container">
             <div class="row">
               <div class="col-lg-12 col-md-12 col-12 col-sm-12">
                 <nav class="navbar navbar-expand-lg navbar-light bg-none ">
                   
                   <div class="container-fluid">
-                    <a class="navbar-brand" href="index.html "> <img style="height: 60px;width: 120px;" src="gyanvi-img/logo.png" alt=""> </a>
+                    <a class="navbar-brand" href="index.html "> <img style="height: 100px;width: 120px;" src="gyanvi-img/logo.png" alt=""> </a>
                     <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-content">
                       <div class="hamburger-toggle">
                         <div class="hamburger">
@@ -236,7 +266,7 @@
                           <a class="nav-link active" aria-current="page" href="#">Home</a>
                         </li> -->
                         <li class="nav-item dropdown dropdown-mega position-static">
-                          <a class="nav-link dropdown-toggle" href="#bg-drop-down" data-bs-toggle="dropdown" data-bs-auto-close="outside"><img src="img/website/web-designing.png" alt=""> Web Design</a>
+                          <a class="nav-link dropdown-toggle" href="webdesign.html"><img src="img/website/web-designing.png" alt=""> Web Design</a>
                           <div class="dropdown-menu shadow bg-secondary" id="bg-drop-down">
                             <div class="mega-content px-4">
                               <div class="container-fluid">
@@ -367,7 +397,7 @@
                           </div>
                         </li>
                         <li class="nav-item dropdown dropdown-mega position-static">
-                          <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" data-bs-auto-close="outside"> <img src="img/digital/digital-marketing.png" alt=""> web development</a>
+                          <a class="nav-link dropdown-toggle" href="webdevelopment.html"> <img src="img/digital/digital-marketing.png" alt=""> Web development</a>
                           <div class="dropdown-menu shadow bg-secondary" id="bg-drop-down">
                             <div class="mega-content px-4">
                               <div class="container-fluid">
@@ -519,7 +549,7 @@
                         </li>
                     
                         <li class="nav-item dropdown dropdown-mega position-static">
-                          <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" data-bs-auto-close="outside"> <img src="img/digital/digital-marketing.png" alt=""> Digital Marketing</a>
+                          <a class="nav-link dropdown-toggle" href="digitalmarketing.html"> <img src="img/digital/digital-marketing.png" alt=""> Digital Marketing</a>
                           <div class="dropdown-menu shadow bg-secondary" id="bg-drop-down">
                             <div class="mega-content px-4">
                               <div class="container-fluid">
@@ -655,7 +685,7 @@
                           </div>
                         </li>
                         <li class="nav-item dropdown dropdown-mega position-static">
-                          <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" data-bs-auto-close="outside"> <img src="img/graphics/graphic-designing.png" alt="">   Graphics </a>
+                          <a class="nav-link dropdown-toggle" href="graphicsdesign.html"> <img src="img/graphics/graphic-designing.png" alt="">   Graphics </a>
                           <div class="dropdown-menu shadow bg-secondary" id="bg-drop-down">
                             <div class="mega-content px-4">
                               <div class="container-fluid">
@@ -764,7 +794,7 @@
                           </div>
                         </li>
                         <li class="nav-item dropdown dropdown-mega position-static">
-                          <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" data-bs-auto-close="outside"><img src="img/App/mobile-apps.png" alt=""> App</a>
+                          <a class="nav-link dropdown-toggle" href="appdevelopment.html" ><img src="img/App/mobile-apps.png" alt=""> App</a>
                           <div class="dropdown-menu shadow bg-secondary" id="bg-drop-down">
                             <div class="mega-content px-4">
                               <div class="container-fluid">
@@ -861,7 +891,7 @@
                           </div>
                         </li>
                         <li class="nav-item dropdown dropdown-mega position-static">
-                          <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" data-bs-auto-close="outside"><img src="img/software/software.png" alt=""> Software</a>
+                          <a class="nav-link dropdown-toggle" href="softwaredevelopment.html"><img src="img/software/software.png" alt=""> Software</a>
                           <div class="dropdown-menu shadow bg-secondary" id="bg-drop-down">
                             <div class="mega-content px-4">
                               <div class="container-fluid">
@@ -992,7 +1022,7 @@
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
           
             <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <a class="nav-link dropdown-toggle" href="webdesign.html" id="navbarDropdown" role="button">
                 Web design
               </a>
               <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -1008,7 +1038,7 @@
               </ul>
             </li>
             <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <a class="nav-link dropdown-toggle" href="webdevelopment.html" id="navbarDropdown" role="button" >
                 Web Developement
               </a>
               <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -1025,7 +1055,7 @@
               </ul>
             </li>
             <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <a class="nav-link dropdown-toggle" href="digitalmarketing.html" id="navbarDropdown" role="button" >
                 Digital Marketing
               </a>
               <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -1043,7 +1073,7 @@
               </ul>
             </li>
             <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <a class="nav-link dropdown-toggle" href="graphicsdesign.html" id="navbarDropdown" role="button" >
                 Graphics 
               </a>
               <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -1057,7 +1087,7 @@
                             </ul>
             </li>
             <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <a class="nav-link dropdown-toggle" href="appdevelopment.html" id="navbarDropdown" role="button" >
                 App 
               </a>
               <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -1071,7 +1101,7 @@
                             </ul>
             </li>
             <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <a class="nav-link dropdown-toggle" href="softwaredevelopment.html" id="navbarDropdown" role="button" >
                 Software
               </a>
               <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -1092,502 +1122,936 @@
     </nav>
     </header>
     <!-- end mobile view -->
-  <!-- end mobile view -->
 
-  <section class="all-page-main">
-    <div class="container">
+  <div class="mega-content px-4 bg-secondary m-4">
+    <div class="container-fluid">
       <div class="row">
-        <div class="all-page-main-heading">
+        <div class="col-12 col-lg-2 col-sm-12 col-md-6 mb-3">
          
-          <div class="text-animated24">
-  
-            <h1>Terms & Conditions </h1>
-          </div>
-          <nav aria-label="breadcrumb">
-            <ol class="breadcrumb align-items-center mb-0 px-0">
-              <li class="breadcrumb-item">
-                <a href="index.html ">Home</a>
-              </li>
-              <li class="breadcrumb-item active">
-                  Terms & Conditions            </li>
-            </ol>
-          </nav>
-        </div>
-      </div>
-    </div>
-  
-  
-  </section>
-
-  <section>
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-12">
-                <div class="heading">
-                    <h1 >Gyanvi Digital   Terms of Service </h1>
-                </div>
-            </div>
-
-        </div>
-      
-<div class="row">
-    <div class="col-lg-12" id="term">
-        <h5>
-            PLEASE READ THE FOLLOWING TERMS AND CONDITIONS OF USE AGREEMENT
-            </h5>
-            <p>This site owned and operated by Gyanvi Digital  Private Limited and contains contents, links, software, logos, marks, services and products offered free etc. (hereinafter referred “services”) which is derived in whole or in part from said services supplied directly or indirectly by Gyanvi, outsider agencies and/or any other sources, and is protected by domestic and international copyright and trademark laws and/or any other applicable Laws.</p>
-            <p>Before you subscribe to and/or begin participating in or using web site, Gyanvi Digital believes that user(s) have fully read, understood and accept the agreement. If you do not agree to or wish to be bound by agreement, you may not access or otherwise use the web site.</p>
-            <ul>
-                <li>Acceptance of Agreement</li>
-                <li>Users Eligibility & Agreement</li>
-                <li>Registered Users</li>
-                <li> Services</li>
-                <li>Intellectual Property Rights</li>
-                <li> Payment and Refund Issue</li>
-                <li> Copyright Policy</li>
-                <li>Matter of Disputes</li>
-            </ul>
-            <h4> 1- Acceptance of Agreement</h4>
-            <p> To use the services of Gyanvi Digital, you must agree to the Terms and Conditions put forth. If you do not accept the terms, you may not use the Gyanvi Digital's services.</p>
-            <p>Gyanvi Digital acts solely as a platform for members to interact for business purposes.</p>
-            <p>We do not participate in the actual transactions between buyers and sellers, and we are not a party to any contract for sale negotiated between buyers and sellers. All transactions are the responsibility of the members. This agreement does not create any partnership, joint venture, or other business relationship between Gyanvi Digital and the other party. </p>
-            <p> Membership charges are subject to change at Gyanvi Digital's discretion. We reserve the right to block or delete a webpage at any time without assigning any reason, and users will have no claim against Gyanvi Digital under any circumstances. By registering, you agree to receive communications from Gyanvi Digital and its associated portals.</p>
-            <h4>  2- Users Eligibility & Agreement</h4>
-            <p>"User(s)" refers to any individual or business entity that operates legally in India or other countries and has the right to use the services provided by Gyanvi Digital. Services are available only to those who can form legally binding contracts under applicable laws. Users must be at least 18 years of age to use our services.</p>
-            <p> Users must comply with relevant laws while accessing the website. Gyanvi Digital may refuse service at its discretion and is not responsible for any consequences arising from the use of the website. </p>
-            <!-- <p> This agreement applies to user(s) if user(s) are visitors, registered - free or paid user(s) who access the web site for any purpose. It also applies to any legal entity which may be represented by you under actual or apparent authority. User(s) may use this site solely for their own personal or internal purposes.</p> -->
-            <p>This agreement applies to visitors, registered users (free or paid), and any legal entities represented by the user. It covers all services offered on the website, with specific terms applicable to particular services prevailing in case of conflicts.</p>
-            <h4> 3- Registered Users </h4>
-            <p> A User who has filled out an online registration form available on the Site by giving their information (such as name, address, telephone and fax number, email address, business details etc.) is deemed as a registered user of the Site (a "Registered User"). An account would be established on the Site ("Account") for each Registered User and each Registered User will be assigned a user alias ("User ID") and password ("Password") to facilitate access to the Account.</p>
-            <p>The Site may assign a web-based email account with limited storage space for the User to send or receive email (the "Email Account")if the same is a part of the chosen Paid Service. The User shall be responsible for all users and the content of all the messages communicated through the Email Account, as well as the consequences of any such message. </p>
-            <p> If the Registered User is a business entity, you represent that (a) you have the authority to bind the entity to this Agreement; (b) the address you use when registering is the principal place of business of such business entity; (c) vouch that all other information submitted to the Site during the registration process is true, accurate, current and complete and (d) you are the concerned person to be contacted for all requisite correspondence. For purposes of this provision, a branch or representative office will not be considered a separate entity and its principal place of business will be deemed to be that of its head office.</p>
-          <p> By becoming a Registered User, you consent to the inclusion of your personal data in the Site’s database and authorize the Site/Company to share such information with other Users.</p>
-          <p>The suspension / termination of a Registered User's Account or Email Account are solely at the discretion of the Site/Company. This can be effected at any time by giving no less than 24-hour notice to the Registered User; provided, however, that notice is not required for such termination if (a) in the Site’s determination, there is any breach of the provisions of this Agreement by the Registered User; or (b) the Site has reasonable grounds to suspect that such information provided by a Registered User is inaccurate, untrue or is not current or complete, or (c) the Site believes that the Registered User's actions may cause financial loss or legal liability to such Registered User, the Site’s other Users, or the Site/Company or its affiliates.</p>
-          <p> The Registered User shall not use the Email Account for junk mail, chain letters or spamming or the transmission of any unlawful, harassing, libelous, abusive, threatening, harmful, vulgar, obscene or otherwise objectionable material or any kind or nature. Further, the Registered User shall not use the Email Account to publish, distribute, transmit or circulate any unsolicited advertising or promotional information or any content that is obscene, indecent, seditious, offensive, defamatory, threatening, or which incites or results in causing racial hatred, discrimination, menace or breach of confidence.</p>
-          <p> The Account is non-transferable and a Registered User may not sell, attempt to sell, offer to sell, give, assign or otherwise transfer an Account, User ID or Password to a third party without the prior written consent of the Site. The Site may suspend or terminate the Account of a Registered User or the transferee of a Registered User in the event of a sale, offer to sell, gift, assignment or transfer in violation of this Section.</p>
-          <p> The Site reserves the right to refuse registration and deny the issuance of an Account and/or Email Account and associated User ID and Password to any User for whatever reason.</p>
-          <h4>4- Services </h4>
-        <p>  Access to the Site and certain features are provided to all Users free of charge. However, the Site reserves the right, without prior notice, to restrict access to certain areas or features of the Site ("Paid Services") to paying Users or Users who undergo a specific registration process.</p>
-        <p> The Site reserves the right to issue a warning, restrict the extent or deny or revoke permissions to access the Paid Services to any User for whatever reason in order to protect the interests of the Site. The specific features and working functionality of the Paid Services may vary on the basis of chosen package, industry variations as well as demographical demarcation. Any modification / temporary suspension / complete termination of any feature or the Paid Service would remain at the sole discretion of the Site with only an amendment in the Terms.</p>
-        <p> The core features included in the service would include following (which may be customized, or added to or suspended for scheduled or unscheduled maintenance purposes, from time to time at the sole discretion of https://gyanvidigital.com/ </p>
-        <p> <b>Company Profile -</b> This feature allows each Member to display and modify vital information about its business, such as year and place of establishment, annual turnover, number of employees, and products and services offered, etc.</p>
-       <p><b>Products </b>  - It allows each member to display and amend descriptions, specifications and images of products according to package chosen by you.</p>
-    <p><b>Unlimited Buyer Trade Lead posting</b> - This feature allows each Member to post on the Site offers to purchase products and services from other users of the Site for public display.</p>
-   <p> Site designing service is one of the deliverables with some of Paid Services and the Site reserves the sole rights on its technical maintenance. Each User hereby agrees to indemnify and save the Site/Company, its affiliates, directors, officers and employees harmless, from any and all losses, claims, liabilities (including legal costs on a full indemnity basis) which may arise due to interruptions because of Third Party Services, technical errors while uploading or after hosting of website.</p>
-   <p> As Website designing service is a free service with some of the Paid Services, hence the Site retains the sole rights of all the technical details including FTP details. No claim(s) shall be entertained regarding the same. Since the data of the template based website is driven through the centralized database of the Site, hence it is non-transferable on any other server and any such attempt would render the website non-functional. As Website designing service is a free service with some of the Paid Services, hence the Site retains the sole rights of all the technical details including FTP details. No claim(s) shall be entertained regarding the same.</p> 
-   <p> The Users hereby agree to extend full cooperation in assimilation of the information required for site development and approve of correspondence by phone/mail. Reminder mails would be sent if the Users do not respond to calls/mail send/or do not provide the details/material requested and/or do not provide necessary approvals/feedbacks on progress of website/incomplete material/ incomplete images/layout/ hosting of website etc.</p>
-   <p> Any exception / flexibility in the above circumstances would be at the sole discretion of the Site and would require a written request from the User.</p>   
-   <h4> 5-Intellectual Property Rights</h4>
-   <p> The Site/Company is the sole owner of all the rights to the Site and the Site Content. All title, ownership and intellectual property rights in the Site and Site Content shall remain with the Site/Company, its affiliates or licensors of the Site Content, as the case may be. All rights not otherwise claimed under this Agreement or by the Site are hereby reserved.“https://gyanvidigital.com/ ", and related icons and logos are registered trademarks or service marks or trademarks of the Site in various jurisdictions and are protected under applicable copyright, trademark and other proprietary rights laws. The unauthorized modification, copy, use or publication of these marks is strictly prohibited.</p>
-   <h4>6-Copyright Policy</h4>
-<p>The User shall not copy, reproduce or download any information, text, images, video clips, directories, files, databases or listings available on or through the Site ("Site Content") for the purpose of re-selling or re-distributing the Site Content, mass mailing (via emails, wireless text messages, physical mail or otherwise), operating a business that competes with the Site, or otherwise commercially exploiting the Site Content. Such systematic compilation / retrieval of the Site Content is strictly prohibited and any User resorting to such actions will face legal action initiated by the Site/Company. The Site is expressly disclaims liability over Third Party Content. The Site in no ways promotes / endorses any claim of the Users.</p>
-
-<h4> 7-Payment and Refund Issue </h4>
-<p> All the payments would be accepted on standard modes set by the Site. As we at the Site keep up high interactions with our clients and carry out entire process with their approval thus there is no provision for any kind of full or partial refund. It is expressly stated that paid amount would not be refund in any circumstance. Once an order is placed it cannot be cancelled as it is sent for processing immediately. Your personal preferences changed in the course of time, cannot serve as a reason for refund or charge back.</p>
-<h4>  8-Matter of Disputes and Jurisdictional Aspects </h4>
-<p> For any kind of legal dispute related to https://gyanvidigital.com/ would be dealt in only territory of Lucknow. All the legal issues are subjected only to pertinent contemporary laws in force at Lucknow to the jurisdiction of courts located in Lucknow only. This Agreement and any dispute or matter arising from incidental use https://gyanvidigital.com/ is governed by the laws of India and the Member and the Company hereby submit to the exclusive jurisdiction of the courts at Lucknow, India. This Agreement, accepted upon use of the Site and further affirmed by becoming a Member of the Ideaspromotion.com, contains the entire agreement between you and https://gyanvidigital.com/ regarding the use of the Site and/or the Service. If any provision of this Agreement is held invalid, the remainder of this Agreement shall continue in full force and effect.</p>
-</div>
-
-</div>
-    </div>
-</section>
-
-      <!-- start footer -->
-       
-      <footer>
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-6 col-md-12 col-12 col-sm-12">
-              <div class="row">
-              <div class="col-lg-4 col-md-6 col-12 col-sm-12">
-                <div class="footer-text">
-                  <h5>Web Designing</h5>
-                  <ul>
-                    <li><a href="#">Custom  Design</a></li>
-                    <li><a href="#">Dynamic  Design</a></li>
-                    <li><a href="#">Mobile  Design</a></li>
-                    <li><a href="#">Ecommerce  Design</a></li>
-                    <li><a href="#">Responsive Web 
-                        </a></li>
-                        <li><a href="#">Static Website  </a></li>
-                  </ul>
-                </div>
-              </div>
-              <div class="col-lg-4 col-md-6 col-12 col-sm-12">
-                <div class="footer-text">
-                  <h5>Digital Marketing</h5>
-                  <ul>
-                    <li><a href="#">SEO</a></li>
-                    <li><a href="#">Affiliate Marketing</a></li>
-                    <li><a href="#">Content Writing</a></li>
-                    <li><a href="#">Online Marketing</a></li>
-                    <li><a href="#">Link Building </a></li>
-                    <li><a href="#">Email Marketing</a></li>
-                  </ul>
-                </div>
-              </div>
-             
-              <div class="col-lg-4 col-md-6 col-12 col-sm-12">
-                <div class="footer-text">
-                  <h5>Web Development</h5>
-                  <ul>
-                    <li><a href="#">Asp.Net  </a></li>
-                    <li><a href="#">Wordpress </a></li>
-                    <li><a href="#">CMS </a></li>
-                    <li><a href="#">Joomla</a></li>
-                    <li><a href="#">Magento  </a></li>
-                    <li><a href="#">3rd Party API </a></li>
-                  </ul>
-                </div>
-              </div>
-              <div class="col-lg-4 col-md-6 col-12 col-sm-12">
-                <div class="footer-text">
-                  <h5> Apps Development </h5>
-                  <ul>
-                    <li><a href="#">Android App  </a></li>
-                    <li><a href="#">IOS App </a></li>
-                    <li><a href="#">Windows App </a></li>
-                    <li><a href="#">Blackberry App </a></li>
-                   <li><a href="#">3rd Party API </a></li>
-                   <li><a href="#">Native App</a></li>
-                  </ul>
-                </div>
-              </div>
-              <div class="col-lg-4 col-md-6 col-12 col-sm-12">
-                <div class="footer-text">
-                  <h5>Graphics</h5>
-                  <ul>
-                    <li><a href="#">Logo Designing </a></li>
-                    <li><a href="#">Brochure Designing </a></li>
-                    <li><a href="#">Flipbook Designing </a></li>
-                   <li><a href="#">Graphic Designing</a></li>
-                    <li><a href="#">Banner Designing </a></li>
-                    <li><a href="#">Photoshop Editing </a></li>
-                  </ul>
-                </div>
-              </div>
-              <div class="col-lg-4 col-md-6 col-12 col-sm-12">
-                <div class="footer-text">
-                  <h5>Software</h5>
-                  <ul>
-                    <li><a href="#">Custom Base </a></li>
-                    <li><a href="#">School MGT</a></li>
-                    <li><a href="#">Barcode Software </a></li>
-                    <li><a href="#">Inventory MGT</a></li>
-                    <li><a href="#">Loyalty Program </a></li>
-                    
-                    <li> <a href="#">Sales ERP Software</a> </li>
-                  </ul>
-                </div>
-              </div>
-      
-            </div>
-            <div class="row" id="border">
-              <div class="col-lg-4 col-md-6 col-12 col-sm-12">
-                <div class="footer-text">
-                  
-                  <ul>
-                    <li><a href="index.html ">Home</a></li>
-                    <li><a href="about-us.html">About Us</a></li>
-                    <li><a href="#">Feedback</a></li>
-                    <li><a href="contact-us.html">Complaint</a></li>
-                  </ul>
-                </div>
-              </div>
-              <div class="col-lg-4 col-md-6 col-12 col-sm-12">
-                <div class="footer-text">
-                  
-                  <ul>
-                    <li><a href="#">Web Design Portfolio</a></li>
-                    <li><a href="#">Mobile App Portfolio</a></li>
-                    <li><a href="#">SEO Portfolio</a></li>
-                   
-                  </ul>
-                </div>
-              </div>
-              <div class="col-lg-4 col-md-6 col-12 col-sm-12">
-                <div class="footer-text">
-                  
-                  <ul>
-                    <li><a href="#">Payment Option</a></li>
-                    <li><a href="#">Support</a></li>
-                    <li><a href="sitemap.xml">Sitemap</a></li>
-                   
-                  </ul>
-                </div>
-              </div>
-            </div>
-            </div>
-            <div class="col-lg-6 col-md-12 col-12 col-sm-12">
-              <div class="">
-                <div class="row">
-               
-                  <div class="col-lg-6 col-md-6 col-12 col-sm-12" id="contact-bg">
-                    <div class="footer-icon">
-                      <!-- <img src="https://static.weblinkindia.net/img/contact-info.svg" alt=""> -->
-                      <p>Contact Us</p>
-                      <div class="icon-footer">
-                       <a style="color: white;" href="tel:+918010268352"> <p><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-telephone-inbound" viewBox="0 0 16 16">
-                        <path d="M15.854.146a.5.5 0 0 1 0 .708L11.707 5H14.5a.5.5 0 0 1 0 1h-4a.5.5 0 0 1-.5-.5v-4a.5.5 0 0 1 1 0v2.793L15.146.146a.5.5 0 0 1 .708 0m-12.2 1.182a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.6 17.6 0 0 0 4.168 6.608 17.6 17.6 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.68.68 0 0 0-.58-.122l-2.19.547a1.75 1.75 0 0 1-1.657-.459L5.482 8.062a1.75 1.75 0 0 1-.46-1.657l.548-2.19a.68.68 0 0 0-.122-.58zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877z"/>
-                      </svg></i> +91 8010268352
-                      <a style="color: white;" href="tel:++91 8920310518"> <p><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-telephone-inbound" viewBox="0 0 16 16">
-                        <path d="M15.854.146a.5.5 0 0 1 0 .708L11.707 5H14.5a.5.5 0 0 1 0 1h-4a.5.5 0 0 1-.5-.5v-4a.5.5 0 0 1 1 0v2.793L15.146.146a.5.5 0 0 1 .708 0m-12.2 1.182a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.6 17.6 0 0 0 4.168 6.608 17.6 17.6 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.68.68 0 0 0-.58-.122l-2.19.547a1.75 1.75 0 0 1-1.657-.459L5.482 8.062a1.75 1.75 0 0 1-.46-1.657l.548-2.19a.68.68 0 0 0-.122-.58zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877z"/>
-                      </svg></i> +91 8920310518
-</p></a>
-                       <a href="https://wa.me/918010268352"> <p><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"  fill="currentColor" class="bi bi-whatsapp" viewBox="0 0 16 16">
-                        <path d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232"/>
-                      </svg> +91 8010268352
-</p></a>
-                       <a href="#"> <p><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope-at" viewBox="0 0 16 16">
-                        <path d="M2 2a2 2 0 0 0-2 2v8.01A2 2 0 0 0 2 14h5.5a.5.5 0 0 0 0-1H2a1 1 0 0 1-.966-.741l5.64-3.471L8 9.583l7-4.2V8.5a.5.5 0 0 0 1 0V4a2 2 0 0 0-2-2zm3.708 6.208L1 11.105V5.383zM1 4.217V4a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v.217l-7 4.2z"/>
-                        <path d="M14.247 14.269c1.01 0 1.587-.857 1.587-2.025v-.21C15.834 10.43 14.64 9 12.52 9h-.035C10.42 9 9 10.36 9 12.432v.214C9 14.82 10.438 16 12.358 16h.044c.594 0 1.018-.074 1.237-.175v-.73c-.245.11-.673.18-1.18.18h-.044c-1.334 0-2.571-.788-2.571-2.655v-.157c0-1.657 1.058-2.724 2.64-2.724h.04c1.535 0 2.484 1.05 2.484 2.326v.118c0 .975-.324 1.39-.639 1.39-.232 0-.41-.148-.41-.42v-2.19h-.906v.569h-.03c-.084-.298-.368-.63-.954-.63-.778 0-1.259.555-1.259 1.4v.528c0 .892.49 1.434 1.26 1.434.471 0 .896-.227 1.014-.643h.043c.118.42.617.648 1.12.648m-2.453-1.588v-.227c0-.546.227-.791.573-.791.297 0 .572.192.572.708v.367c0 .573-.253.744-.564.744-.354 0-.581-.215-.581-.8Z"/>
-                      </svg>  gyanvidigital@gmail.com</p></a>
+          <div class="list-group text-center" id="img-home">
         
-                      </div>
-                     
-                      <div class="contact-ft" id="Social-link">
-                        <p>Social Link</p>
-                        <a style="background-color: transparent;" href="https://m.facebook.com/gyanvidigital/ " target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
-                          <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951"/>
-                        </svg></a>
-                        <a style="background-color: transparent;" href="https://www.instagram.com/gyanvidigital?igsh=dmxqbjllZ2FhN3lo " target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
-                          <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"/>
-                        </svg></a>
-                        <a style="background-color: transparent;" href="https://twitter.com/" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-twitter" viewBox="0 0 16 16">
-                          <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334q.002-.211-.006-.422A6.7 6.7 0 0 0 16 3.542a6.7 6.7 0 0 1-1.889.518 3.3 3.3 0 0 0 1.447-1.817 6.5 6.5 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.32 9.32 0 0 1-6.767-3.429 3.29 3.29 0 0 0 1.018 4.382A3.3 3.3 0 0 1 .64 6.575v.045a3.29 3.29 0 0 0 2.632 3.218 3.2 3.2 0 0 1-.865.115 3 3 0 0 1-.614-.057 3.28 3.28 0 0 0 3.067 2.277A6.6 6.6 0 0 1 .78 13.58a6 6 0 0 1-.78-.045A9.34 9.34 0 0 0 5.026 15"/>
-                        </svg></a>
-                      
+            <a class="list-group-item" href="#">
+              <img src="img/digital/seo-services.png">
+              <p style="color: white;">
+         
+                SEO Services
+                </p>
+            </a>
+            
+          </div>
+        </div>
+        <div class="col-12 col-lg-2 col-sm-12 col-md-6  mb-3">
+        
+          <div class="list-group text-center" id="img-home">
+        
+        
+            <a class="list-group-item" href="#">
+              <img src="img/digital/affiliate-marketing.png">
+              <p style="color: white;">
+         
+                Affiliate Marketing
+                </p>
+            </a>
+            
+          </div>
+        </div>
+        <div class="col-12 col-lg-2 col-sm-12 col-md-6">
 
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-lg-6 col-md-6 col-12 col-sm-12" id="contact-bg">
-                    <div class="footer-icon">
-                      <!-- <img src="https://static.weblinkindia.net/img/address-icon.svg" alt=""> -->
-                      <p class="gkp" id="ft">Gorakhpur Office</p>
-                      <div class="icon-footer">
-                       
-                        
-                       <p> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-geo-alt" viewBox="0 0 16 16">
-                        <path d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A32 32 0 0 1 8 14.58a32 32 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10"/>
-                        <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4m0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6"/>
-                      </svg>GDA Tower Golghar Near Indra Bal Vihar, Gorakhpur 273001 
-                       </p>
-                     
-                    
-                     <p class="gkp"  id="ft" >Betiahata Office</p>
-                     <div class="icon-footer">
-                       <p> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-geo-alt" viewBox="0 0 16 16">
-                        
-                        <path d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A32 32 0 0 1 8 14.58a32 32 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10"/>
-                        <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4m0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6"/>
-                      </svg>Gorakhpur<br>Uttar Pradesh</p>
-                      </div>
-                    </div>
-                  </div>
-                
-                </div>
-              </div>
-             
-            </div>
+          <div class="list-group text-center" id="img-home">
+        
+        
+            <a class="list-group-item" href="#">
+              <img src="img/digital/social-media-marketing.png">
+              <p style="color: white;">
+         
+                Online Marketing Company
+                </p>
+            </a>
           </div>
         </div>
-
-   
-  </footer>
-  <section class="footer-lgo">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-2 col-md-4 col-sm-6 col-6">
-          <div class="ft-logo">
-            <img src="img/footer-logo/clutch.jpg" alt="">
-          </div>
-        </div>
-        <div class="col-lg-2 col-md-4 col-sm-6 col-6">
-          <div class="ft-logo">
-            <img src="img/footer-logo/extract-co.jpg" alt="">
-          </div>
-        </div>
-        <div class="col-lg-2 col-md-4 col-sm-6 col-6">
-          <div class="ft-logo">
-            <img src="img/footer-logo/goodfirms.jpg" alt="">
-          </div>
-        </div>
-        <div class="col-lg-2 col-md-4 col-sm-6 col-6">
-          <div class="ft-logo">
-            <img src="img/footer-logo/top-it-firms.jpg" alt="">
-          </div>
-        </div>
-        <div class="col-lg-2 col-md-4 col-sm-6 col-6">
-          <div class="ft-logo">
-            <img src="img/footer-logo/nj_jersey-city_digital-marketing-agencies_2020.webp" alt="">
-          </div>
-        </div>
-        <div class="col-lg-2 col-md-4 col-sm-6 col-6">
-          <div class="ft-logo mt-3">
-            <img src="img/footer-logo/google-partner.jpg" alt="">
-          </div>
-        </div>
-       
-      </div>
-    </div>
-  </section>
-     <!-- start copyrights -->
-<section class="bg-copyright">
-  <div class="container">
-    <div class="row">
-      <div class="col-lg-4 col-md-6 col-sm-12 col-12" id="mt-cpy">
-        <a href="Term-Condition.html" class="text-white" >Terms & Conditions |</a> &nbsp; <a href="Term-Condition.html" class="text-white privacy">Privacy Policy</a>
-      </div>
-      <div class="col-lg-8 col-md-6 col-sm-12 col-12" id="mt-cpy">
-  <p class="text-white" style="text-align: right;" id="copy-rights">© Copyrights <a href="index.html" target="_blank">Gyanvi Digital  Gorakhpur</a>  All Rights Reserved. </p></div>
+        <div class="col-12 col-lg-2 col-sm-12 col-md-6  mb-3">
           
+          <div class="list-group text-center" id="img-home">
+        
+            <a class="list-group-item" href="#">
+              <img src="img/digital/social-media-management.png">
+              <p style="color: white;">
+         
+                Conversion Rate Optimization
+                </p>
+            </a>
+            <!-- <a class="list-group-item" href="#">Drupal Web Development</a>
+            <a class="list-group-item" href="#">3rd Party API Integration</a> -->
+          </div>
+        </div>
+    
+        <div class="col-12 col-lg-2 col-sm-12 col-md-6">
+        
+          <div class="list-group text-center" id="img-home">
+        
+            <a class="list-group-item" href="#">
+              <img src="img/digital/content-marketing-services.png">
+              <p style="color: white;">
+         
+                Content Marketing Services
+                </p>
+            </a>
+          </div>
+        </div>
+        <div class="col-12 col-lg-2 col-sm-12 col-md-6">
+        
+          <div class="list-group text-center" id="img-home">
+        
+            <a class="list-group-item" href="#">
+              <img src="img/digital/multivariate-testing.png">
+              <p style="color: white;">
+                Multivariate Testing
+                </p>
+            </a>
+          </div>
+        </div>
+        <div class="col-12 col-lg-2 col-sm-12 col-md-6">
+        
+          <div class="list-group text-center" id="img-home">
+        
+            <a class="list-group-item" href="#">
+              <img src="img/digital/email-marketing-services.png">
+              <p style="color: white;">
+         
+                Email Marketing Services
+                </p>
+            </a>
+          </div>
+        </div>
+        <div class="col-12 col-lg-2 col-sm-12 col-md-6">
+        
+          <div class="list-group text-center" id="img-home">
+        
+            <a class="list-group-item" href="#">
+              <img src="img/digital/link-building-services.png">
+              <p style="color: white;">
+         
+                Link Building Services
+                </p>
+            </a>
+          </div>
         </div>
      
+        <div class="col-12 col-lg-2 col-sm-12 col-md-6">
+        
+          <div class="list-group text-center" id="img-home">
+        
+            <a class="list-group-item" href="#">
+              <img src="img/digital/ocal-business-listing-icon-38.png">
+              <p style="color: white;">
+         
+                Online Reputation Management
+                </p>
+            </a>
+          </div>
+        </div>
+    
       </div>
     </div>
+  </div>
+
+  <style>
+    .services, .services1{
+      margin: 20px;
+      margin-top: 30px;
+    }
+
+    .services h2{
+      text-align: center;
+      font-size: 2.2rem;
+      font-weight: 600;
+    }
+
+    .services h2 i{
+      color: #0c5192;
+    }
+
+    .services p{
+      text-align: justify;
+    }
+
+    .services1 h3{
+      text-align: center;
+      font-size: 1.5rem;
+    }
+
+    .services1 p{
+      text-align: justify;
+    }
+
+/* General container styling */
+.seo-benefits {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+}
+
+.seo-benefits h2 {
+  color: #090909; /* Green shade matching your color scheme */
+  font-size: 1.8em;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Flex container for the cards */
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 0;
+  list-style: none;
+  margin: 0;
+}
+
+/* Individual card styling */
+.card {
+  background: linear-gradient(0deg, rgba(244,241,239,1) 0%, rgba(184,207,244,1) 100%);
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  flex: 1 1 calc(33.33% - 40px); /* Three cards per row on large screens */
+  max-width: calc(33.33% - 40px); /* Ensures proper alignment */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: justify;
+}
+
+/* Hover effect */
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Text styling inside cards */
+.card strong {
+  display: block;
+  color: #070707; /* Emphasize with green text */
+  margin-bottom: 10px;
+}
+
+/* Paragraph below the cards */
+.seo-benefits p {
+  font-size: 1.1em;
+  text-align: center;
+  color: #0b0b0b;
+  margin-top: 20px;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .card {
+    flex: 1 1 calc(50% - 20px); /* Two cards per row on tablets */
+    max-width: calc(50% - 20px);
+  }
+}
+
+@media (max-width: 480px) {
+  .card {
+    flex: 1 1 100%; /* One card per row on small screens */
+    max-width: 100%;
+  }
+}
+
+/* General styling */
+.seo-section {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+h2 {
+  text-align: justify;
+  color: #060606;
+}
+
+p {
+  color: #080808;
+  line-height: 1.6;
+}
+
+/* Carousel container */
+.carousel-container {
+  position: relative;
+  overflow: hidden;
+  margin: 20px auto;
+}
+
+.carousel {
+  display: flex;
+  gap: 20px;
+  transition: transform 0.5s ease-in-out;
+}
+
+.card {
+  flex: 0 0 300px;
+  background: linear-gradient(0deg, rgba(244,241,239,1) 0%, rgb(244, 220, 184) 100%);
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.card h3 {
+  color: #090909;
+  margin-bottom: 10px;
+}
+
+.card p {
+  color: #060606;
+}
+
+/* Buttons */
+button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: #0a0a0a;
+  color: #fff;
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+  border-radius: 50%;
+  opacity: 0.8;
+  transition: opacity 0.3s;
+}
+
+button:hover {
+  opacity: 1;
+}
+
+button.prev {
+  left: 10px;
+}
+
+button.next {
+  right: 10px;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .carousel {
+    gap: 10px;
+  }
+
+  .card {
+    flex: 0 0 90%;
+  }
+
+  button {
+    padding: 8px 12px;
+  }
+}
+
+/* General styling */
+.seo-benefits-section {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  max-width: 900px;
+  margin: auto;
+  background: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.seo-benefits-section h2 {
+  text-align: center;
+  color: #111111;
+  margin-bottom: 15px;
+}
+
+.seo-benefits-section p {
+  color: #060606;
+  line-height: 1.8;
+  margin-bottom: 15px;
+}
+
+.seo-benefits-section ul {
+  list-style-type: disc;
+  margin-left: 20px;
+  padding-left: 20px;
+  color: #090909;
+}
+
+.seo-benefits-section li {
+  margin-bottom: 10px;
+  font-weight: 500;
+}
+
+.seo-benefits-section li strong {
+  color: #060606;
+  font-weight: bold;
+}
+
+/* Responsive styling */
+@media (max-width: 768px) {
+  .seo-benefits-section {
+    padding: 15px;
+    font-size: 14px;
+  }
+
+  .seo-benefits-section h2 {
+    font-size: 18px;
+  }
+
+  .seo-benefits-section ul {
+    margin-left: 15px;
+    padding-left: 15px;
+  }
+}
+
+/* Container Styling */
+.seo-section {
+  font-family: 'Roboto', sans-serif;
+  color: #080808;
+  padding: 20px;
+  width: 100%;
+  margin: auto;
+  line-height: 1.6;
+}
+
+/* Header Section */
+.seo-header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.seo-header h2 {
+  font-size: 28px;
+  color: #0d0e0d;
+  margin-bottom: 10px;
+  margin-top: 30px;
+  text-align: center;
+}
+
+.seo-header p {
+  font-size: 16px;
+  color: #0f0e0e;
+}
+
+/* Content Section */
+.seo-content {
+  margin: 20px 0;
+}
+
+.seo-list {
+  list-style: none;
+  padding: 0;
+}
+
+.seo-list li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+  padding: 10px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.seo-list .icon {
+  font-size: 24px;
+  color: #060606;
+  margin-right: 15px;
+}
+
+.seo-list .text {
+  flex: 1;
+  font-size: 16px;
+}
+
+/* Footer Section */
+.seo-footer h3 {
+  font-size: 28px;
+  color: #030303;
+  margin-top: 40px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.seo-footer p {
+  font-size: 16px;
+  margin-bottom: 15px;
+  margin-left: 30px;
+  margin-right: 30px;
+}
+
+.seo-footer .cta {
+  font-weight: bold;
+  text-align: center;
+}
+
+.seo-footer .cta a {
+  color: #ffffff;
+  background-color: #15165e;
+  padding: 8px 16px;
+  border-radius: 6px;
+  text-decoration: none;
+}
+
+.seo-footer .cta a:hover {
+  background-color: #219150;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .seo-header h2 {
+    font-size: 22px;
+  }
+
+  .seo-list .text {
+    font-size: 14px;
+  }
+
+  .seo-footer h3 {
+    font-size: 18px;
+  }
+}
+
+  </style>
+
+  <div>
+    <div class="services">
+      <h2 class="m-4 text-centre "><strong>Top SEO Services in Gorakhpur</strong> : Boost Your Online Visibility Today</h2>
+      <p class="m-4 pb-4 ">In today’s digital world, having an online presence is no longer optional—it’s a necessity. Businesses of all sizes need effective SEO strategies to rank higher on search engines like Google. If you’re a business owner in Gorakhpur looking to grow your brand, you’re in the right place. Professional SEO services in Gorakhpur can help you improve your search engine rankings, attract new customers, and boost sales.</p>
+    </div>
+    
+   <div class="services1">
+    <h4 class="m-4 text-center">Why SEO Services Are Important for Businesses in Gorakhpur</h4>
+    <p class="m-4 pb-4 ">Search Engine Optimization (SEO) is the process of optimizing your website to rank higher on search engines. For businesses in Gorakhpur, SEO can unlock massive growth opportunities. Whether you run a local shop, e-commerce site, or service-based business, a good SEO strategy can make you visible to potential customers searching for your products or services.</p>
+   </div>
+
+   <div class="seo-benefits">
+    <h2 class="m-4 pb-4">Here’s how SEO services in Gorakhpur can benefit your business:</h2>
+    <ul class="card-container">
+      <li class="card">
+        <strong>Increased Visibility:</strong> Rank higher on Google and get noticed by more customers.
+      </li>
+      <li class="card">
+        <strong>Targeted Traffic:</strong> Attract visitors who are actively searching for your services.
+      </li>
+      <li class="card">
+        <strong>Improved Sales:</strong> Turn website visitors into paying customers.
+      </li>
+      <li class="card">
+        <strong>Brand Authority:</strong> Build trust by appearing on the first page of search results.
+      </li>
+    </ul>
+    <p>Investing in professional SEO ensures you stay ahead of your competition in Gorakhpur.</p>
+  </div>
+  
+
+  <div class="seo-section">
+    <h2 class="m-4 pb-4 text-center">How SEO Companies in Gorakhpur Can Help Your Business</h2>
+    <p>
+      Hiring an experienced SEO company in Gorakhpur can give you a competitive edge.
+      These companies offer proven strategies to improve your website’s ranking and performance. 
+      Here’s what an SEO company does for your business:
+    </p>
+    
+    <!-- Carousel -->
+    <div class="carousel-container">
+      <div class="carousel">
+        <div style="background: linear-gradient(0deg, rgba(244,241,239,1) 0%, rgb(184, 216, 244) 100%);" class="card">
+          <h3>Website Audit and Analysis</h3>
+          <p>SEO experts analyze your website’s current performance, identifying issues like broken links and slow page load times.</p>
+        </div>
+        <div style="background: linear-gradient(0deg, rgba(244,241,239,1) 0%, rgb(184, 216, 244) 100%);" class="card">
+          <h3>Keyword Research</h3>
+          <p>Target the right keywords with research that aligns with what your customers are searching for.</p>
+        </div>
+        <div style="background: linear-gradient(0deg, rgba(244,241,239,1) 0%, rgb(184, 216, 244) 100%);" class="card">
+          <h3>On-Page Optimization</h3>
+          <p>Optimize individual pages with keyword placement, improved navigation, and mobile-friendly designs.</p>
+        </div>
+        <div style="background: linear-gradient(0deg, rgba(244,241,239,1) 0%, rgb(184, 216, 244) 100%);" class="card">
+          <h3>Off-Page Optimization</h3>
+          <p>Build authority through quality backlinks, social media promotion, and guest blogging.</p>
+        </div>
+        <div style="background: linear-gradient(0deg, rgba(244,241,239,1) 0%, rgb(184, 216, 244) 100%);" class="card">
+          <h3>Content Creation</h3>
+          <p>Create high-quality content like blogs and articles that resonate with your audience.</p>
+        </div>
+        <div style="background: linear-gradient(0deg, rgba(244,241,239,1) 0%, rgb(184, 216, 244) 100%);" class="card">
+          <h3>Monitoring and Reporting</h3>
+          <p>Track your SEO progress with ongoing monitoring and detailed performance reports.</p>
+        </div>
+      </div>
+      <!-- Carousel Buttons -->
+      <button class="prev">❮</button>
+      <button class="next">❯</button>
+    </div>
+  </div>
+
+
+  <div class="seo-benefits-section">
+    <h2 class="m-4 pb-4">Why Choose Professional SEO Services Companies in Gorakhpur?</h2>
+    <p class="m-4 pb-4">
+      There are many reasons to choose a trusted SEO company to handle your website optimization.
+      Here’s why businesses prefer working with local SEO services companies in Gorakhpur:
+    </p>
+    <ul class="m-4 pb-4">
+      <li>
+        <strong>Local Knowledge:</strong> An SEO company in Gorakhpur understands the local market, audience, and competition better.
+      </li>
+      <li>
+        <strong>Customized Strategies:</strong> They offer personalized SEO plans that meet your business goals.
+      </li>
+      <li>
+        <strong>Affordable Pricing:</strong> Local SEO services are budget-friendly compared to big-city agencies.
+      </li>
+      <li>
+        <strong>Quick Communication:</strong> You can easily connect with the team to discuss your project.
+      </li>
+    </ul>
+    <p>
+      By hiring professional SEO experts, you save time and energy while focusing on your core business activities.
+    </p>
+  </div>
+  
+  <div style="background-color: #d9e6f6; margin-top: 20px; margin-bottom: 20px;" class="seo-section">
+    <div class="seo-header">
+      <h2>What to Look for in an SEO Company in Gorakhpur</h2>
+      <p>Choosing the right SEO company can make a huge difference. Look for the following qualities:</p>
+    </div>
+    <div class="seo-content">
+      <ul class="seo-list">
+        <li>
+          <div class="icon">&#x1F4BB;</div>
+          <strong>Experience:</strong> Check if the company has successfully worked with similar businesses.
+          <!-- <div class="text">
+            <strong>Experience:</strong> Check if the company has successfully worked with similar businesses.
+          </div> -->
+        </li>
+        <li>
+          <div class="icon">&#x1F4CA;</div>
+          <strong>Proven Results:</strong> Ask for case studies or examples of improved rankings.
+          <!-- <div class="text">
+            <strong>Proven Results:</strong> Ask for case studies or examples of improved rankings.
+          </div> -->
+        </li>
+        <li>
+          <div class="icon">&#x1F4DD;</div>
+          <strong>Transparency:</strong> The company should provide regular updates and clear reports.
+          <!-- <div class="text">
+            <strong>Transparency:</strong> The company should provide regular updates and clear reports.
+          </div> -->
+        </li>
+        <li>
+          <div class="icon">&#x1F4AC;</div>
+          <strong>Client Reviews:</strong> Look for reviews and testimonials to confirm their credibility.
+          <!-- <div class="text">
+            <strong>Client Reviews:</strong> Look for reviews and testimonials to confirm their credibility.
+          </div> -->
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div class="seo-footer">
+    <h3>Conclusion: Get the Best SEO Services in Gorakhpur</h3>
+    <p>
+      If you’re looking to grow your business online, investing in professional SEO services in Gorakhpur is the best decision you can make. 
+      By improving your website’s visibility, driving targeted traffic, and boosting sales, an SEO company can help you achieve your business goals.
+    </p>
+    <p class="cta">Ready to rank higher on Google? <a href="contact-us.html">Let’s get started!</a></p>
+  </div>
+  
+  </div>
+  
+
+
+      <!-- start footer -->
+  
+     <!-- start footer -->
+     
+     <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6 col-md-12 col-12 col-sm-12">
+            <div class="row">
+            <div class="col-lg-4 col-md-6 col-12 col-sm-12">
+              <div class="footer-text">
+                <h5>Web Designing</h5>
+                <ul>
+                  <li><a href="#">Custom  Design</a></li>
+                  <li><a href="#">Dynamic  Design</a></li>
+                  <li><a href="#">Mobile  Design</a></li>
+                  <li><a href="#">Ecommerce  Design</a></li>
+                  <li><a href="#">Responsive Web 
+                      </a></li>
+                      <li><a href="#">Static Website  </a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-12 col-sm-12">
+              <div class="footer-text">
+                <h5>Digital Marketing</h5>
+                <ul>
+                  <li><a href="#">SEO</a></li>
+                  <li><a href="#">Affiliate Marketing</a></li>
+                  <li><a href="#">Content Writing</a></li>
+                  <li><a href="#">Online Marketing</a></li>
+                  <li><a href="#">Link Building </a></li>
+                  <li><a href="#">Email Marketing</a></li>
+                </ul>
+              </div>
+            </div>
+           
+            <div class="col-lg-4 col-md-6 col-12 col-sm-12">
+              <div class="footer-text">
+                <h5>Web Development</h5>
+                <ul>
+                  <li><a href="#">Asp.Net  </a></li>
+                  <li><a href="#">Wordpress </a></li>
+                  <li><a href="#">CMS </a></li>
+                  <li><a href="#">Joomla</a></li>
+                  <li><a href="#">Magento  </a></li>
+                  <li><a href="#">3rd Party API </a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-12 col-sm-12">
+              <div class="footer-text">
+                <h5> Apps Development </h5>
+                <ul>
+                  <li><a href="#">Android App  </a></li>
+                  <li><a href="#">IOS App </a></li>
+                  <li><a href="#">Windows App </a></li>
+                  <li><a href="#">Blackberry App </a></li>
+                 <li><a href="#">3rd Party API </a></li>
+                 <li><a href="#">Native App</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-12 col-sm-12">
+              <div class="footer-text">
+                <h5>Graphics</h5>
+                <ul>
+                  <li><a href="#">Logo Designing </a></li>
+                  <li><a href="#">Brochure Designing </a></li>
+                  <li><a href="#">Flipbook Designing </a></li>
+                 <li><a href="#">Graphic Designing</a></li>
+                  <li><a href="#">Banner Designing </a></li>
+                  <li><a href="#">Photoshop Editing </a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-12 col-sm-12">
+              <div class="footer-text">
+                <h5>Software</h5>
+                <ul>
+                  <li><a href="#">Custom Base </a></li>
+                  <li><a href="#">School MGT</a></li>
+                  <li><a href="#">Barcode Software </a></li>
+                  <li><a href="#">Inventory MGT</a></li>
+                  <li><a href="#">Loyalty Program </a></li>
+                  
+                  <li> <a href="#">Sales ERP Software</a> </li>
+                </ul>
+              </div>
+            </div>
+    
+          </div>
+          <div class="row" id="border">
+            <div class="col-lg-4 col-md-6 col-12 col-sm-12">
+              <div class="footer-text">
+                
+                <ul>
+                  <li><a href="index.html ">Home</a></li>
+                  <li><a href="about-us.html">About Us</a></li>
+                  <li><a href="#">Feedback</a></li>
+                  <li><a href="contact-us.html">Complaint</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-12 col-sm-12">
+              <div class="footer-text">
+                
+                <ul>
+                  <li><a href="#">Web Design Portfolio</a></li>
+                  <li><a href="#">Mobile App Portfolio</a></li>
+                  <li><a href="#">SEO Portfolio</a></li>
+                 
+                </ul>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-12 col-sm-12">
+              <div class="footer-text">
+                
+                <ul>
+                  <li><a href="#">Payment Option</a></li>
+                  <li><a href="#">Support</a></li>
+                  <li><a href="sitemap.xml">Sitemap</a></li>
+                 
+                </ul>
+              </div>
+            </div>
+          </div>
+          </div>
+          <div class="col-lg-6 col-md-12 col-12 col-sm-12">
+            <div class="">
+              <div class="row">
+             
+                <div class="col-lg-6 col-md-6 col-12 col-sm-12" id="contact-bg">
+                  <div class="footer-icon">
+                    <!-- <img src="https://static.weblinkindia.net/img/contact-info.svg" alt=""> -->
+                    <p>Contact Us</p>
+                    <div class="icon-footer">
+                     <a style="color: white;" href="tel:+918010268352"> <p><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-telephone-inbound" viewBox="0 0 16 16">
+                      <path d="M15.854.146a.5.5 0 0 1 0 .708L11.707 5H14.5a.5.5 0 0 1 0 1h-4a.5.5 0 0 1-.5-.5v-4a.5.5 0 0 1 1 0v2.793L15.146.146a.5.5 0 0 1 .708 0m-12.2 1.182a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.6 17.6 0 0 0 4.168 6.608 17.6 17.6 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.68.68 0 0 0-.58-.122l-2.19.547a1.75 1.75 0 0 1-1.657-.459L5.482 8.062a1.75 1.75 0 0 1-.46-1.657l.548-2.19a.68.68 0 0 0-.122-.58zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877z"/>
+                    </svg></i> +91 8010268352
+                    <a style="color: white;" href="tel:++91 8920310518"> <p><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-telephone-inbound" viewBox="0 0 16 16">
+                      <path d="M15.854.146a.5.5 0 0 1 0 .708L11.707 5H14.5a.5.5 0 0 1 0 1h-4a.5.5 0 0 1-.5-.5v-4a.5.5 0 0 1 1 0v2.793L15.146.146a.5.5 0 0 1 .708 0m-12.2 1.182a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.6 17.6 0 0 0 4.168 6.608 17.6 17.6 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.68.68 0 0 0-.58-.122l-2.19.547a1.75 1.75 0 0 1-1.657-.459L5.482 8.062a1.75 1.75 0 0 1-.46-1.657l.548-2.19a.68.68 0 0 0-.122-.58zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877z"/>
+                    </svg></i> +91 8920310518
+</p></a>
+                     <a href="https://wa.me/918010268352"> <p><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"  fill="currentColor" class="bi bi-whatsapp" viewBox="0 0 16 16">
+                      <path d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232"/>
+                    </svg> +91 8010268352
+</p></a>
+                     <a href="#"> <p><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope-at" viewBox="0 0 16 16">
+                      <path d="M2 2a2 2 0 0 0-2 2v8.01A2 2 0 0 0 2 14h5.5a.5.5 0 0 0 0-1H2a1 1 0 0 1-.966-.741l5.64-3.471L8 9.583l7-4.2V8.5a.5.5 0 0 0 1 0V4a2 2 0 0 0-2-2zm3.708 6.208L1 11.105V5.383zM1 4.217V4a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v.217l-7 4.2z"/>
+                      <path d="M14.247 14.269c1.01 0 1.587-.857 1.587-2.025v-.21C15.834 10.43 14.64 9 12.52 9h-.035C10.42 9 9 10.36 9 12.432v.214C9 14.82 10.438 16 12.358 16h.044c.594 0 1.018-.074 1.237-.175v-.73c-.245.11-.673.18-1.18.18h-.044c-1.334 0-2.571-.788-2.571-2.655v-.157c0-1.657 1.058-2.724 2.64-2.724h.04c1.535 0 2.484 1.05 2.484 2.326v.118c0 .975-.324 1.39-.639 1.39-.232 0-.41-.148-.41-.42v-2.19h-.906v.569h-.03c-.084-.298-.368-.63-.954-.63-.778 0-1.259.555-1.259 1.4v.528c0 .892.49 1.434 1.26 1.434.471 0 .896-.227 1.014-.643h.043c.118.42.617.648 1.12.648m-2.453-1.588v-.227c0-.546.227-.791.573-.791.297 0 .572.192.572.708v.367c0 .573-.253.744-.564.744-.354 0-.581-.215-.581-.8Z"/>
+                    </svg>  gyanvidigital@gmail.com</p></a>
+      
+                    </div>
+                   
+                    <div class="contact-ft" id="Social-link">
+                      <p>Social Link</p>
+                      <a style="background-color: transparent;" href="https://m.facebook.com/gyanvidigital/ " target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+                        <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951"/>
+                      </svg></a>
+                      <a style="background-color: transparent;" href="https://www.instagram.com/gyanvidigital?igsh=dmxqbjllZ2FhN3lo " target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+                        <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"/>
+                      </svg></a>
+                      <a style="background-color: transparent;" href="https://twitter.com/" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-twitter" viewBox="0 0 16 16">
+                        <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334q.002-.211-.006-.422A6.7 6.7 0 0 0 16 3.542a6.7 6.7 0 0 1-1.889.518 3.3 3.3 0 0 0 1.447-1.817 6.5 6.5 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.32 9.32 0 0 1-6.767-3.429 3.29 3.29 0 0 0 1.018 4.382A3.3 3.3 0 0 1 .64 6.575v.045a3.29 3.29 0 0 0 2.632 3.218 3.2 3.2 0 0 1-.865.115 3 3 0 0 1-.614-.057 3.28 3.28 0 0 0 3.067 2.277A6.6 6.6 0 0 1 .78 13.58a6 6 0 0 1-.78-.045A9.34 9.34 0 0 0 5.026 15"/>
+                      </svg></a>
+                    
+
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-12 col-sm-12" id="contact-bg">
+                  <div class="footer-icon">
+                    <!-- <img src="https://static.weblinkindia.net/img/address-icon.svg" alt=""> -->
+                    <p class="gkp" id="ft">Gorakhpur Office</p>
+                    <div class="icon-footer">
+                     
+                      
+                     <p> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-geo-alt" viewBox="0 0 16 16">
+                      <path d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A32 32 0 0 1 8 14.58a32 32 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10"/>
+                      <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4m0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6"/>
+                    </svg>GDA Tower Golghar Near Indra Bal Vihar, Gorakhpur 273001 
+                     </p>
+                   
+                  
+                   <p class="gkp"  id="ft" >Betiahata Office</p>
+                   <div class="icon-footer">
+                     <p> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-geo-alt" viewBox="0 0 16 16">
+                      
+                      <path d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A32 32 0 0 1 8 14.58a32 32 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10"/>
+                      <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4m0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6"/>
+                    </svg>Gorakhpur<br>Uttar Pradesh</p>
+                    </div>
+                  </div>
+                </div>
+              
+              </div>
+            </div>
+           
+          </div>
+        </div>
+      </div>
+
  
+</footer>
+<section class="footer-lgo">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-2 col-md-4 col-sm-6 col-6">
+        <div class="ft-logo">
+          <img src="img/footer-logo/clutch.jpg" alt="">
+        </div>
+      </div>
+      <div class="col-lg-2 col-md-4 col-sm-6 col-6">
+        <div class="ft-logo">
+          <img src="img/footer-logo/extract-co.jpg" alt="">
+        </div>
+      </div>
+      <div class="col-lg-2 col-md-4 col-sm-6 col-6">
+        <div class="ft-logo">
+          <img src="img/footer-logo/goodfirms.jpg" alt="">
+        </div>
+      </div>
+      <div class="col-lg-2 col-md-4 col-sm-6 col-6">
+        <div class="ft-logo">
+          <img src="img/footer-logo/top-it-firms.jpg" alt="">
+        </div>
+      </div>
+      <div class="col-lg-2 col-md-4 col-sm-6 col-6">
+        <div class="ft-logo">
+          <img src="img/footer-logo/nj_jersey-city_digital-marketing-agencies_2020.webp" alt="">
+        </div>
+      </div>
+      <div class="col-lg-2 col-md-4 col-sm-6 col-6">
+        <div class="ft-logo mt-3">
+          <img src="img/footer-logo/google-partner.jpg" alt="">
+        </div>
+      </div>
+     
+    </div>
   </div>
 </section>
- 
-  <!-- start bottom to top -->
-  <div class="container-fluid">
-    <div class="row"></div>
-  </div>
-  <!-- <button style="background-color:transparent" onclick="topFunction()" id="myBtn" title="Go to top"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-up-circle-fill" viewBox="0 0 16 16">
-    <path d="M16 8A8 8 0 1 0 0 8a8 8 0 0 0 16 0m-7.5 3.5a.5.5 0 0 1-1 0V5.707L5.354 7.854a.5.5 0 1 1-.708-.708l3-3a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 5.707z"/>
-  </svg></i>
-  </button> -->
-  <div  class="container-fluid">
-    <div class="row">
-      <div class="whatsapp">
-        <a  href="https://wa.me/918010268352" target="_blank"  title="click to open whatsapp chat"><button style="border-radius: 50%; margin-top: 120px; " class="btn btn-success">
-          <svg xmlns="http://www.w3.org/2000/svg" width="34" height="44"  fill="currentColor" class="bi bi-whatsapp" viewBox="0 0 16 16">
-            <path d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232"/>
-          </svg>
-          </button></a>
+   <!-- start copyrights -->
+<section class="bg-copyright">
+<div class="container">
+  <div class="row">
+    <div class="col-lg-4 col-md-6 col-sm-12 col-12" id="mt-cpy">
+      <a href="Term-Condition.html" class="text-white" >Terms & Conditions |</a> &nbsp; <a href="Term-Condition.html" class="text-white privacy">Privacy Policy</a>
+    </div>
+    <div class="col-lg-8 col-md-6 col-sm-12 col-12" id="mt-cpy">
+<p class="text-white" style="text-align: right;" id="copy-rights">© Copyrights <a href="index.html" target="_blank">Gyanvi Digital  Gorakhpur</a>  All Rights Reserved. </p></div>
+        
       </div>
    
-    </div> 
+    </div>
   </div>
 
-     <!-- <script src="js/bootstrap.js"></script>
-     <script src="js/bootstrap.bundle.js"></script> -->
-     <script src="../cdn.jsdelivr.net/npm/%40popperjs/core%402.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
-<script src="../cdn.jsdelivr.net/npm/bootstrap%405.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+</div>
+</section>
 
-<!-- <script src="js/float-panel.js"></script> -->
-
-<script type="text/javascript" src="../code.jquery.com/jquery-1.12.0.min.js"></script>
-<!-- <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.js"></script> -->
-<script type="text/javascript" src="../code.jquery.com/jquery-1.12.0.min.js"></script>
-<script type="text/javascript" src="../cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.js"></script>
- <script>
-$(document).ready(function(){
-    $("#testimonial-slider").owlCarousel({
-        items:2,
-        itemsDesktop:[1000,2],
-        itemsDesktopSmall:[979,2],
-        itemsTablet:[768,1],
-        pagination:false,
-        navigation:true,
-        navigationText:["",""],
-        autoPlay:true
-    });
-});
- </script>
-
-<script>
-    $(document).ready(function(){
-    $(".filter-button").click(function(){
-        var value = $(this).attr('data-filter');
-        
-        if(value == "all")
-        {
-            $('.filter').show('1000');
-        }
-        else
-        {
-            $(".filter").not('.'+value).hide('4000');
-            $('.filter').filter('.'+value).show('4000'); 
-        }
-    });
-    $(".btn").each(function(){
-       $(this).click(function(){
-          $(this).addClass("active");
-          $(this).siblings().removeClass("active");
-       });
-    });
-});
-
- $(document).ready(function(){
-        $("area[rel^='prettyPhoto']").prettyPhoto(); 
-        $(".galleryh:first a[rel^='prettyPhoto']").prettyPhoto({animation_speed:'normal',theme:'light_square',slideshow:3000, autoplay_slideshow: true});
-        $(".galleryh:gt(0) a[rel^='prettyPhoto']").prettyPhoto({animation_speed:'fast',slideshow:10000, hideflash: true});
-    });
-  </script>
-
-<script >
-    $(document).ready(function() {
-        $(".block").slice(0, 2).show();
-        if ($(".block:hidden").length != 0) {
-            $("#load").show();
-        }
-        $("#load").on("click", function(e) {
-            e.preventDefault();
-            $(".block:hidden").slice(0, 2).slideDown();
-            if ($(".block:hidden").length == 0) {
-                $("#load").text("No More to view").fadOut("slow");
-            }
-        });
-    }) 
-</script> 
-
-<script>
+<!-- start bottom to top -->
+<div class="container-fluid">
+  <div class="row"></div>
+</div>
+<!-- <button style="background-color:transparent" onclick="topFunction()" id="myBtn" title="Go to top"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-up-circle-fill" viewBox="0 0 16 16">
+  <path d="M16 8A8 8 0 1 0 0 8a8 8 0 0 0 16 0m-7.5 3.5a.5.5 0 0 1-1 0V5.707L5.354 7.854a.5.5 0 1 1-.708-.708l3-3a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 5.707z"/>
+</svg></i>
+</button> -->
+<div  class="container-fluid">
+  <div class="row">
+    <div class="whatsapp">
+      <a href="https://wa.me/918010268352" target="_blank"  title="click to open whatsapp chat"><button style="border-radius: 50%; " class="btn btn-success">
+        <svg xmlns="http://www.w3.org/2000/svg" width="34" height="44"  fill="currentColor" class="bi bi-whatsapp" viewBox="0 0 16 16">
+          <path d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232"/>
+        </svg>
+        </button></a>
+    </div>
  
-//Get the button
-var mybutton = document.getElementById("myBtn");
+  </div> 
+</div>
 
-// When the user scrolls down 20px from the top of the document, show the button
-window.onscroll = function() {scrollFunction()};
-
-function scrollFunction() {
-  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-    mybutton.style.display = "block";
-  } else {
-    mybutton.style.display = "none";
-  }
-}
-
-// When the user clicks on the button, scroll to the top of the document
-function topFunction() {
-  document.body.scrollTop = 0;
-  document.documentElement.scrollTop = 0;
-}
-
-
-</script>
-
-</body>
-
-<!-- Mirrored from www.Gyanvi Digital / by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 29 Jun 2024 06:44:46 GMT -->
-</html>
-
-
-
-
-
-
-
-
-
->
-
-
-
-<!-- <script src="js/bootstrap.js"></script>
-<script src="js/bootstrap.bundle.js"></script> -->
-<script src="../cdn.jsdelivr.net/npm/%40popperjs/core%402.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+   <!-- <script src="js/bootstrap.js"></script>
+   <script src="js/bootstrap.bundle.js"></script> -->
+   <script src="../cdn.jsdelivr.net/npm/%40popperjs/core%402.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
 <script src="../cdn.jsdelivr.net/npm/bootstrap%405.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
 
 <!-- <script src="js/float-panel.js"></script> -->
@@ -1598,63 +2062,63 @@ function topFunction() {
 <script type="text/javascript" src="../cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.js"></script>
 <script>
 $(document).ready(function(){
-$("#testimonial-slider").owlCarousel({
-  items:2,
-  itemsDesktop:[1000,2],
-  itemsDesktopSmall:[979,2],
-  itemsTablet:[768,1],
-  pagination:false,
-  navigation:true,
-  navigationText:["",""],
-  autoPlay:true
-});
+  $("#testimonial-slider").owlCarousel({
+      items:2,
+      itemsDesktop:[1000,2],
+      itemsDesktopSmall:[979,2],
+      itemsTablet:[768,1],
+      pagination:false,
+      navigation:true,
+      navigationText:["",""],
+      autoPlay:true
+  });
 });
 </script>
 
 <script>
-$(document).ready(function(){
-$(".filter-button").click(function(){
-  var value = $(this).attr('data-filter');
-  
-  if(value == "all")
-  {
-      $('.filter').show('1000');
-  }
-  else
-  {
-      $(".filter").not('.'+value).hide('4000');
-      $('.filter').filter('.'+value).show('4000'); 
-  }
-});
-$(".btn").each(function(){
- $(this).click(function(){
-    $(this).addClass("active");
-    $(this).siblings().removeClass("active");
- });
-});
-});
-
-$(document).ready(function(){
-  $("area[rel^='prettyPhoto']").prettyPhoto(); 
-  $(".galleryh:first a[rel^='prettyPhoto']").prettyPhoto({animation_speed:'normal',theme:'light_square',slideshow:3000, autoplay_slideshow: true});
-  $(".galleryh:gt(0) a[rel^='prettyPhoto']").prettyPhoto({animation_speed:'fast',slideshow:10000, hideflash: true});
-});
-</script>
-
-<script >
-$(document).ready(function() {
-  $(".block").slice(0, 2).show();
-  if ($(".block:hidden").length != 0) {
-      $("#load").show();
-  }
-  $("#load").on("click", function(e) {
-      e.preventDefault();
-      $(".block:hidden").slice(0, 2).slideDown();
-      if ($(".block:hidden").length == 0) {
-          $("#load").text("No More to view").fadOut("slow");
+  $(document).ready(function(){
+  $(".filter-button").click(function(){
+      var value = $(this).attr('data-filter');
+      
+      if(value == "all")
+      {
+          $('.filter').show('1000');
+      }
+      else
+      {
+          $(".filter").not('.'+value).hide('4000');
+          $('.filter').filter('.'+value).show('4000'); 
       }
   });
-}) 
+  $(".btn").each(function(){
+     $(this).click(function(){
+        $(this).addClass("active");
+        $(this).siblings().removeClass("active");
+     });
+  });
+});
+
+$(document).ready(function(){
+      $("area[rel^='prettyPhoto']").prettyPhoto(); 
+      $(".galleryh:first a[rel^='prettyPhoto']").prettyPhoto({animation_speed:'normal',theme:'light_square',slideshow:3000, autoplay_slideshow: true});
+      $(".galleryh:gt(0) a[rel^='prettyPhoto']").prettyPhoto({animation_speed:'fast',slideshow:10000, hideflash: true});
+  });
+</script>
+
+<script >
+  $(document).ready(function() {
+      $(".block").slice(0, 2).show();
+      if ($(".block:hidden").length != 0) {
+          $("#load").show();
+      }
+      $("#load").on("click", function(e) {
+          e.preventDefault();
+          $(".block:hidden").slice(0, 2).slideDown();
+          if ($(".block:hidden").length == 0) {
+              $("#load").text("No More to view").fadOut("slow");
+          }
+      });
+  }) 
 </script> 
 
 <script>
@@ -1667,9 +2131,9 @@ window.onscroll = function() {scrollFunction()};
 
 function scrollFunction() {
 if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-mybutton.style.display = "block";
+  mybutton.style.display = "block";
 } else {
-mybutton.style.display = "none";
+  mybutton.style.display = "none";
 }
 }
 
@@ -1682,7 +2146,36 @@ document.documentElement.scrollTop = 0;
 
 </script>
 
+<script>
+  const carousel = document.querySelector('.carousel');
+const cards = document.querySelectorAll('.card');
+const nextButton = document.querySelector('.next');
+const prevButton = document.querySelector('.prev');
+
+let index = 0;
+
+const updateCarousel = () => {
+  const width = cards[0].clientWidth + 20; // card width + gap
+  carousel.style.transform = `translateX(-${index * width}px)`;
+};
+
+nextButton.addEventListener('click', () => {
+  if (index < cards.length - 1) {
+    index++;
+    updateCarousel();
+  }
+});
+
+prevButton.addEventListener('click', () => {
+  if (index > 0) {
+    index--;
+    updateCarousel();
+  }
+});
+
+</script>
+
 </body>
 
-<!-- Mirrored from www.ideaspromotion.com/ by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 29 Jun 2024 06:44:46 GMT -->
+<!-- Mirrored from www.Gyanvi Digital / by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 29 Jun 2024 06:44:46 GMT -->
 </html>

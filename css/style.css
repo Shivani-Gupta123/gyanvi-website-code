@@ -31,7 +31,7 @@
         margin-top:8px;
         }
         p{
-font-size: 17px !important;
+font-size: 17px ;
         }
 /* start top bar */
 .dropdown-item{
@@ -49,9 +49,6 @@ font-size: 17px !important;
 }
 .top-bar{
     background: #0c5192;
-    height: 30px;
- 
-
 }
 #top-contact a{
 color: white;
@@ -148,7 +145,7 @@ text-decoration: none;
 }
 #rig li {
 	display:inline-block;
-	*display:inline;/*for IE6 - IE7*/
+
 	width:25%;
 	vertical-align:middle;
 	box-sizing:border-box;
@@ -312,10 +309,10 @@ button{
     background-color: #0b2d5d;
 }
 .banner-slider{
-    background-color: #07618a;
+    background-color: #0b0b0b;
     display: flex;
     align-items:center;
-    height: 81vh;
+    height: 500px;
 }
 
 #caption-desktop h3{
@@ -362,11 +359,9 @@ button{
     opacity: .6;
 }
 .carousel-control-next-icon{
-    background-color: #184079;
     padding: px !important;
 }
 .carousel-control-prev-icon{
-    background-color: #184079;
     padding: px !important;  
 }
 
@@ -379,20 +374,33 @@ button{
     width: 100%;
     padding: 20px;
     display: flex;
+    flex-direction: column;
     align-items: center;
   
 }
-.about-text{
-    text-align: center;
-}
-.about-text h1{
+
+.about-us h3{
+    font-size: 35px;
+    font-weight: 600;
+    margin: 20px;
     color: white;
 }
-.about-text h4{
+
+.about-us strong{
     color: white;
 }
-.about-text p{
+
+.about-us p{
     color: white;
+}
+
+.images{
+    align-items: center;
+    margin-top: 40px;
+}
+
+images img{
+    height: 600px;
 }
 /* end about section */
 
